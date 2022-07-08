@@ -83,7 +83,7 @@ export const fetchMilestones = async () : Promise<Milestone[]> => {
     const response = await fetch(`https://api.github.com/repos/godotengine/godot/milestones?state=open`, {
         headers: generateHeader()
     });
-    const milestones = await response.json() as MilestoneResponse[];
+    const milestones = (await response.json() ?? []) as MilestoneResponse[];
     return milestones.map(milestone => ({
         title: milestone.title,
         description: milestone.description,

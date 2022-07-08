@@ -14,6 +14,8 @@ jobs:
           yarn
           yarn build
           yarn export
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
