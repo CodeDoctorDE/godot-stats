@@ -1,0 +1,12 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/jan-andrej/Dokumente/godot-stats/.github/workflows/build.yml"
+  }
+}

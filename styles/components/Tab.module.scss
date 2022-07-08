@@ -1,0 +1,32 @@
+@use '../colors';
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabList {
+    background-color: colors.$head-background-color;
+    color: colors.$panel-color-text;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    list-style-type: none;
+    font-weight: 800;
+    overflow-x: auto;
+}
+
+.tabItem {
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &Active {
+        background-color: colors.$background-color;
+        color: colors.$background-color-text;
+    }
+}

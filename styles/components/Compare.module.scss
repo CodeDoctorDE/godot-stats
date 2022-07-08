@@ -1,0 +1,39 @@
+@use '../colors';
+
+.compare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.compareHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.comparePlus {
+    font-size: 2rem;
+    color: colors.$plus;
+    margin: 0;
+}
+
+.compareBetween {
+    font-size: 2rem;
+    margin: 0.1rem 0.5rem;
+}
+
+.compareMinus {
+    font-size: 2rem;
+    color: colors.$red;
+    margin: 0;
+}
+
+.compareDiff {
+    font-size: 3rem;
+    margin: 0;
+}
+
+

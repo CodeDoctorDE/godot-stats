@@ -1,0 +1,19 @@
+@use '../colors';
+
+.list {
+    list-style-type: none;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: colors.$background-color-text;
+    text-decoration: none;
+    // remove underline from links
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,17 @@
+@use '../colors';
+
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.selectMenu {
+    margin: 0 0 0 0.5em;
+    padding: 0.25em 0.5em;
+    background-color: colors.$panel-color;
+    color: colors.$panel-color-text-title;
+    border-radius: 0.5em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: colors.$panel-color-text;
+}
