@@ -12,13 +12,37 @@ import { Flex, Row } from '../components/Layout'
 import Select from '../components/Select'
 import Tabs, { Tab } from '../components/Tab'
 import { fetchIssues, fetchMilestones, fetchProposals, Issue, Milestone, TimeSpan } from '../lib/stats'
-
+import { readHistory, writeHistory } from '../lib/history'
+import { Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 
 type HomeProps = {
   milestones: MilestoneProps[],
   openProposals: SpanBasedProps<CountedData<Issue>>,
   closedProposals: SpanBasedProps<CountedData<Issue>>,
   lastUpdated: string,
+  history: History[]
+}
+
+type History = {
+  milestones: MilestoneHistory[],
+  openProposals: number,
+  closedProposals: number,
+  lastUpdated: string,
+}
+
+type MilestoneHistory = {
+  milestone: Milestone,
+  openIssues: number,
+  closedIssues: number,
 }
 
 type MilestoneProps = {
@@ -37,14 +61,38 @@ type CountedData<T> = {
 }
 
 
-const Home = ({ openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
+const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+  );
   const [span, setSpan] = React.useState<TimeSpan>('daily');
-  console.log(milestones);
+  const barOptions = {
+    responsive: true,
+    interaction: {
+      mode: 'index' as const,
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+      },
+    },
+  };
+  console.log(history);
   return (
     <>
       <Head>
         <title>Godot stats</title>
         <meta name="description" content="Statistics about the godot engine github repository" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -64,6 +112,23 @@ const Home = ({ openProposals, closedProposals, milestones, lastUpdated }: HomeP
           <Tab label="Proposals">
             <Container>
               <h2>Proposals</h2>
+              <Bar options={barOptions} data={{
+                labels: history.map(h => h.lastUpdated),
+                datasets: [
+                  {
+                    label: "Open",
+                    backgroundColor: '#FF6384',
+                    data: history.map(h => h.openProposals),
+                    stack: 'Stack 0'
+                  },
+                  {
+                    label: "Closed",
+                    backgroundColor: '#36A2EB',
+                    data: history.map(h => h.closedProposals),
+                    stack: 'Stack 0'
+                  }
+                ]
+              }} />
               <Row wrap spacing={16}>
                 <Panel flex={1}>
                   <h3>Open issues ({openProposals[span].count})</h3>
@@ -96,6 +161,23 @@ const Home = ({ openProposals, closedProposals, milestones, lastUpdated }: HomeP
                   {milestone.milestone.description}
                 </p>
                 <Compare plus={milestone.milestone.openIssues} minus={milestone.milestone.closedIssues} />
+                <Bar options={barOptions} data={{
+                  labels: history.map(h => h.lastUpdated),
+                  datasets: [
+                    {
+                      label: "Open",
+                      backgroundColor: '#FF6384',
+                      data: history.map(h => h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.openIssues ?? 0),
+                      stack: 'Stack 0'
+                    },
+                    {
+                      label: "Closed",
+                      backgroundColor: '#36A2EB',
+                      data: history.map(h => h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0),
+                      stack: 'Stack 0'
+                    }
+                  ]
+                }} />
                 <Row wrap spacing={16}>
                   <Panel flex={1}>
                     <h3>Open issues ({milestone.openIssues[span].count})</h3>
@@ -166,11 +248,28 @@ export const getStaticProps = async () => {
     closedProposals[span as TimeSpan] = fetchedClosed;
   }));
 
+  const shouldWriteHistory = process.env.WRITE_HISTORY === 'true';
+  if (shouldWriteHistory) {
+    const history: History = {
+      lastUpdated,
+      milestones: milestoneProps.map((milestone, i) => ({
+        milestone: milestone.milestone,
+        openIssues: milestone.openIssues.daily.count,
+        closedIssues: milestone.closedIssues.daily.count
+      })),
+      openProposals: openProposals.daily.count,
+      closedProposals: closedProposals.daily.count
+    };
+    writeHistory(JSON.stringify(history));
+  }
+  const history = readHistory().map((value) => JSON.parse(value) as History);
+
   const props: HomeProps = {
     milestones: milestoneProps,
     openProposals,
     closedProposals,
-    lastUpdated
+    lastUpdated,
+    history
   }
   return {
     props: props

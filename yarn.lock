@@ -73,12 +73,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:12.2.1":
-  version: 12.2.1
-  resolution: "@next/eslint-plugin-next@npm:12.2.1"
+"@next/eslint-plugin-next@npm:12.2.2":
+  version: 12.2.2
+  resolution: "@next/eslint-plugin-next@npm:12.2.2"
   dependencies:
     glob: 7.1.7
-  checksum: a0c87835520c8d348b19872b36c8009e8ef3afd43ceabc49268a648e7b5c999b4e212457e411c4b549073b135c03027f42c0ab831419faf05c2fb888912bc83c
+  checksum: 7593bacf627823edc86aced7b9c9c8d724a90c60551d55d51addf115cce5cd54991666f63dda0f7dd988c28a739307a30665b7a0c06d50b2f23654b93f2c7791
   languageName: node
   linkType: hard
 
@@ -647,6 +647,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "chart.js@npm:3.8.0"
+  checksum: 0360212bf5d534effc8475a1aa705ba7257a315af368b5e8eecf476f0bd57a6bb80ad740e870d552f2d11e134dd1497ccef02950d7e626c21a400ff00ecf59af
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:>=3.0.0 <4.0.0":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
@@ -941,11 +948,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:12.2.1":
-  version: 12.2.1
-  resolution: "eslint-config-next@npm:12.2.1"
+"eslint-config-next@npm:12.2.2":
+  version: 12.2.2
+  resolution: "eslint-config-next@npm:12.2.2"
   dependencies:
-    "@next/eslint-plugin-next": 12.2.1
+    "@next/eslint-plugin-next": 12.2.2
     "@rushstack/eslint-patch": ^1.1.3
     "@typescript-eslint/parser": ^5.21.0
     eslint-import-resolver-node: ^0.3.6
@@ -960,7 +967,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 4ff330669de09fedb31803e24c43794caf4649f8c8984d1c9a886e04abe5431b59a19d0deaa89aac970645ca2271d0081836937b3049e050e0589c63b955d535
+  checksum: 9a472ca1909522e47fd4a460b8d6d0789deaf68f6c8fd69e96353b9c12b537c0185f3ada28990c8542e019ac236618ea22f991e4b8240c4b49c51d0ca226d829
   languageName: node
   linkType: hard
 
@@ -1483,11 +1490,13 @@ __metadata:
     "@types/node": 18.0.3
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
+    chart.js: ^3.8.0
     dayjs: ^1.11.3
     eslint: 8.19.0
-    eslint-config-next: 12.2.1
+    eslint-config-next: 12.2.2
     next: 12.2.1
     react: 18.2.0
+    react-chartjs-2: ^4.2.0
     react-dom: 18.2.0
     sass: ^1.53.0
     typescript: 4.7.4
@@ -2520,6 +2529,16 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
+  languageName: node
+  linkType: hard
+
+"react-chartjs-2@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "react-chartjs-2@npm:4.2.0"
+  peerDependencies:
+    chart.js: ^3.5.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: cd266387d23a32d4590f390075fbecf8570678a9d9fb2d71881072dd557eee88777bf3659c19c07967f813c945aa2b34e44a2e820eaaa89b38035f58e7befcf6
   languageName: node
   linkType: hard
 

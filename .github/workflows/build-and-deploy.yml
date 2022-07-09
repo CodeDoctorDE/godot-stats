@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push: 
   schedule:
-  - cron: 0 0 * * *
+  - cron: 0 23 * * *
 
 permissions:
   contents: write
@@ -23,6 +23,7 @@ jobs:
           yarn export
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WRITE_HISTORY: ${{ github.event_name == "schedule" }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
