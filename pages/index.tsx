@@ -18,6 +18,7 @@ type HomeProps = {
   milestones: MilestoneProps[],
   openProposals: SpanBasedProps<CountedData<Issue>>,
   closedProposals: SpanBasedProps<CountedData<Issue>>,
+  lastUpdated: string,
 }
 
 type MilestoneProps = {
@@ -36,7 +37,7 @@ type CountedData<T> = {
 }
 
 
-const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
+const Home = ({ openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
   const [span, setSpan] = React.useState<TimeSpan>('daily');
   console.log(milestones);
   return (
@@ -123,6 +124,8 @@ const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
           <Tab label="About">
             <Container>
               <h2>About</h2>
+              <p>Last updated: {lastUpdated}</p>
+              <p><a href="https://github.com/CodeDoctorDE/godot-stats">GitHub Repository</a></p>
               <p><a href="https://godotengine.org">Godot Engine website</a></p>
               <p>Developed by <a href="https://github.com/CodeDoctorDE">CodeDoctor</a></p>
               <a href="https://linwood.dev/imprint">Imprint</a>
@@ -136,6 +139,7 @@ const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
 
 export const getStaticProps = async () => {
   const milestones = await fetchMilestones();
+  const lastUpdated = new Date().toISOString();
 
   const milestoneProps: MilestoneProps[] = await Promise.all(milestones.map(async milestone => {
     var openIssues = {} as SpanBasedProps<CountedData<Issue>>;
@@ -165,7 +169,8 @@ export const getStaticProps = async () => {
   const props: HomeProps = {
     milestones: milestoneProps,
     openProposals,
-    closedProposals
+    closedProposals,
+    lastUpdated
   }
   return {
     props: props
