@@ -12,7 +12,7 @@ import { Flex, Row } from '../components/Layout'
 import Select from '../components/Select'
 import Tabs, { Tab } from '../components/Tab'
 import { fetchIssues, fetchMilestones, fetchProposals, Issue, Milestone, TimeSpan } from '../lib/stats'
-import { readHistory, readLastHistory, writeHistory } from '../lib/history'
+import { overwriteHistory, readHistory, readLastHistory, writeHistory } from '../lib/history'
 import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -253,20 +253,22 @@ export const getStaticProps = async () => {
     const history = readLastHistory();
     const lastHistory = history ? JSON.parse(history).lastUpdated : new Date();
     // Test if same day
+    const fetchedOpen = await fetchProposals({ span: 'lastHistory', status: 'open' });
+    const fetchedClosed = await fetchProposals({ span: 'lastHistory', status: 'closed' });
+    const history: History = {
+      lastUpdated,
+      milestones: milestoneProps.map((milestone, i) => ({
+        milestone: milestone.milestone,
+        openIssues: milestone.openIssues.daily.count,
+        closedIssues: milestone.closedIssues.daily.count
+      })),
+      openProposals: fetchedOpen.count,
+      closedProposals: fetchedClosed.count
+    };
     if (lastHistory.getDate() !== new Date().getDate()) {
-      const fetchedOpen = await fetchProposals({ span: 'lastHistory', status: 'open' });
-      const fetchedClosed = await fetchProposals({ span: 'lastHistory', status: 'closed' });
-      const history: History = {
-        lastUpdated,
-        milestones: milestoneProps.map((milestone, i) => ({
-          milestone: milestone.milestone,
-          openIssues: milestone.openIssues.daily.count,
-          closedIssues: milestone.closedIssues.daily.count
-        })),
-        openProposals: fetchedOpen.count,
-        closedProposals: fetchedClosed.count
-      };
       writeHistory(JSON.stringify(history));
+    } else {
+      overwriteHistory(JSON.stringify(history));
     }
   }
   const history = readHistory().map((value) => JSON.parse(value) as History);
