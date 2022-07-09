@@ -250,7 +250,8 @@ export const getStaticProps = async () => {
 
   const shouldWriteHistory = process.env.WRITE_HISTORY === 'true';
   if (shouldWriteHistory) {
-    const lastHistory = JSON.parse(readLastHistory()).lastUpdated;
+    const history = readLastHistory();
+    const lastHistory = history ? JSON.parse(history).lastUpdated : new Date();
     // Test if same day
     if (lastHistory.getDate() !== new Date().getDate()) {
       const fetchedOpen = await fetchProposals({ span: 'lastHistory', status: 'open' });

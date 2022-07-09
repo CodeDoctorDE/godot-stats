@@ -28,9 +28,17 @@ export const writeHistory = async (data: string) => {
     fs.writeFileSync(fileName, data);
 }
 
-export const readLastHistory = (): string => {
+export const overwriteHistory = async (data: string) => {
+    const fileName = `history/0.txt`;
+    fs.writeFileSync(fileName, data);
+}
+
+export const readLastHistory = (): string | null => {
     const fileName = `history/1.txt`;
-    return fs.readFileSync(fileName, 'utf8');
+    if (fs.existsSync(fileName)) {
+        return fs.readFileSync(fileName, 'utf8');
+    }
+    return null;
 }
 
 export const readHistory = (): string[] => {

@@ -30,7 +30,7 @@ jobs:
           yarn export
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WRITE_HISTORY: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+          WRITE_HISTORY: true
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

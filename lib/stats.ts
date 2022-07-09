@@ -40,7 +40,11 @@ const getDate = (timeSpan: TimeSpan) => {
         case 'weekly':
             return dayjs().subtract(1, 'weeks').format('YYYY-MM-DD');
         case 'lastHistory':
-            return JSON.parse(readLastHistory()).lastUpdated;
+            const lastHistory = readLastHistory();
+            if (lastHistory) {
+                return JSON.parse(lastHistory).lastUpdated;
+            }
+            return dayjs().format('YYYY-MM-DD');
     }
 }
 
