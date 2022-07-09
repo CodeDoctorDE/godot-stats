@@ -101,7 +101,7 @@ const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
                     <List>
                       {milestone.openIssues[span].data.map(issue => (
                         <ListItem key={issue.id} href={issue.link}>
-                          {issue.title}
+                          #{issue.id}: {issue.title}
                         </ListItem>
                       ))}
                     </List>
