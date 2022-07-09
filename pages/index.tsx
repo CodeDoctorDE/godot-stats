@@ -124,7 +124,7 @@ const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated
                   {
                     label: "Closed",
                     backgroundColor: '#36A2EB',
-                    data: history.map(h => h.closedProposals),
+                    data: history.map(h => -h.closedProposals),
                     stack: 'Stack 0'
                   }
                 ]
@@ -173,7 +173,7 @@ const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated
                     {
                       label: "Closed",
                       backgroundColor: '#36A2EB',
-                      data: history.map(h => h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0),
+                      data: history.map(h => -(h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0)),
                       stack: 'Stack 0'
                     }
                   ]
