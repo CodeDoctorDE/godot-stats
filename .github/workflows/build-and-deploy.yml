@@ -13,6 +13,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - name: Cache history
+        id: cache-history
+        uses: actions/cache@v3
+        with:
+          path: history
+          key: history
       - uses: actions/setup-node@v3
         with:
           node-version: 18
