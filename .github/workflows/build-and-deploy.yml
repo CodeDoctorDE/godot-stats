@@ -3,6 +3,7 @@ on:
   push: 
   schedule:
   - cron: 0 */2 * * *
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -29,7 +30,7 @@ jobs:
           yarn export
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WRITE_HISTORY: ${{ github.event_name == 'schedule' }}
+          WRITE_HISTORY: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
