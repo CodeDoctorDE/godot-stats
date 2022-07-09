@@ -8,6 +8,7 @@ import Container from '../components/Container'
 import List, { ListItem } from '../components/List'
 import Panel from '../components/Panel'
 import Property from '../components/Property'
+import { Flex, Row } from '../components/Layout'
 import Select from '../components/Select'
 import Tabs, { Tab } from '../components/Tab'
 import { fetchIssues, fetchMilestones, fetchProposals, Issue, Milestone, TimeSpan } from '../lib/stats'
@@ -62,26 +63,28 @@ const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
           <Tab label="Proposals">
             <Container>
               <h2>Proposals</h2>
-                <Panel>
+              <Row wrap spacing={16}>
+                <Panel flex={1}>
                   <h3>Open issues ({openProposals[span].count})</h3>
                   <List>
                     {openProposals[span].data.map(issue => (
                       <ListItem key={issue.id} href={issue.link}>
-                        {issue.title}
+                        #{issue.id}: {issue.title}
                       </ListItem>
                     ))}
                   </List>
                 </Panel>
-                <Panel>
+                <Panel flex={1}>
                   <h3>Closed issues ({closedProposals[span].count})</h3>
                   <List>
                     {closedProposals[span].data.map(issue => (
                       <ListItem key={issue.id} href={issue.link}>
-                        {issue.title}
+                        #{issue.id}: {issue.title}
                       </ListItem>
                     ))}
                   </List>
                 </Panel>
+              </Row>
             </Container>
           </Tab>
           {milestones.map(milestone => (
@@ -92,26 +95,28 @@ const Home = ({ openProposals, closedProposals, milestones }: HomeProps) => {
                   {milestone.milestone.description}
                 </p>
                 <Compare plus={milestone.milestone.openIssues} minus={milestone.milestone.closedIssues} />
-                <Panel>
-                  <h3>Open issues ({milestone.openIssues[span].count})</h3>
-                  <List>
-                    {milestone.openIssues[span].data.map(issue => (
-                      <ListItem key={issue.id} href={issue.link}>
-                        {issue.title}
-                      </ListItem>
-                    ))}
-                  </List>
-                </Panel>
-                <Panel>
-                  <h3>Closed issues ({milestone.closedIssues[span].count})</h3>
-                  <List>
-                    {milestone.closedIssues[span].data.map(issue => (
-                      <ListItem key={issue.id} href={issue.link}>
-                        {issue.title}
-                      </ListItem>
-                    ))}
-                  </List>
-                </Panel>
+                <Row wrap spacing={16}>
+                  <Panel flex={1}>
+                    <h3>Open issues ({milestone.openIssues[span].count})</h3>
+                    <List>
+                      {milestone.openIssues[span].data.map(issue => (
+                        <ListItem key={issue.id} href={issue.link}>
+                          {issue.title}
+                        </ListItem>
+                      ))}
+                    </List>
+                  </Panel>
+                  <Panel flex={1}>
+                    <h3>Closed issues ({milestone.closedIssues[span].count})</h3>
+                    <List>
+                      {milestone.closedIssues[span].data.map(issue => (
+                        <ListItem key={issue.id} href={issue.link}>
+                          #{issue.id}: {issue.title}
+                        </ListItem>
+                      ))}
+                    </List>
+                  </Panel>
+                </Row>
               </Container>
             </Tab>
           )) as ReactElement[]}
