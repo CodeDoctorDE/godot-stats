@@ -12,7 +12,6 @@ import { Flex, Row } from '../components/Layout'
 import Select from '../components/Select'
 import Tabs, { Tab } from '../components/Tab'
 import { fetchIssues, fetchMilestones, fetchProposals, Issue, Milestone, TimeSpan } from '../lib/stats'
-import { overwriteHistory, readHistory, readLastHistory, writeHistory } from '../lib/history'
 import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -23,26 +22,15 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import saveStats, { MilestoneHistory, ProposalHistory, readMilestoneStats, readProposalStats } from '../lib/stats_history'
 
 type HomeProps = {
   milestones: MilestoneProps[],
   openProposals: SpanBasedProps<CountedData<Issue>>,
   closedProposals: SpanBasedProps<CountedData<Issue>>,
   lastUpdated: string,
-  history: History[]
-}
-
-type History = {
-  milestones: MilestoneHistory[],
-  openProposals: number,
-  closedProposals: number,
-  lastUpdated: string,
-}
-
-type MilestoneHistory = {
-  milestone: Milestone,
-  openIssues: number,
-  closedIssues: number,
+  proposalHistory: { [key in string]: ProposalHistory },
+  milestoneHistory: { [key in string]: MilestoneHistory[] },
 }
 
 type MilestoneProps = {
@@ -61,7 +49,7 @@ type CountedData<T> = {
 }
 
 
-const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
+const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -86,7 +74,6 @@ const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated
       },
     },
   };
-  console.log(history);
   return (
     <>
       <Head>
@@ -113,18 +100,18 @@ const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated
             <Container>
               <h2>Proposals</h2>
               <Bar options={barOptions} data={{
-                labels: history.map(h => h.lastUpdated),
+                labels: Object.keys(proposalHistory),
                 datasets: [
                   {
                     label: "Open",
                     backgroundColor: '#FF6384',
-                    data: history.map(h => h.openProposals),
+                    data: Object.values(proposalHistory).map(h => h.openIssues),
                     stack: 'Stack 0'
                   },
                   {
                     label: "Closed",
                     backgroundColor: '#36A2EB',
-                    data: history.map(h => -h.closedProposals),
+                    data: Object.values(proposalHistory).map(h => -h.closedIssues),
                     stack: 'Stack 0'
                   }
                 ]
@@ -162,18 +149,18 @@ const Home = ({ history, openProposals, closedProposals, milestones, lastUpdated
                 </p>
                 <Compare plus={milestone.milestone.openIssues} minus={milestone.milestone.closedIssues} />
                 <Bar options={barOptions} data={{
-                  labels: history.map(h => h.lastUpdated),
+                  labels: Object.keys(milestoneHistory),
                   datasets: [
                     {
                       label: "Open",
                       backgroundColor: '#FF6384',
-                      data: history.map(h => h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.openIssues ?? 0),
+                      data: Object.values(milestoneHistory).map(h => h.find(m => m.milestone.id === milestone.milestone.id)?.openIssues ?? 0),
                       stack: 'Stack 0'
                     },
                     {
                       label: "Closed",
                       backgroundColor: '#36A2EB',
-                      data: history.map(h => -(h.milestones.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0)),
+                      data: Object.values(milestoneHistory).map(h => h.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0),
                       stack: 'Stack 0'
                     }
                   ]
@@ -250,35 +237,20 @@ export const getStaticProps = async () => {
 
   const shouldWriteHistory = process.env.WRITE_HISTORY === 'true';
   if (shouldWriteHistory) {
-    const lastHistory = readLastHistory();
-    const lastUpdated = lastHistory ? JSON.parse(lastHistory).lastUpdated : new Date();
-    // Test if same day
-    const fetchedOpen = await fetchProposals({ span: 'lastHistory', status: 'open' });
-    const fetchedClosed = await fetchProposals({ span: 'lastHistory', status: 'closed' });
-    const history: History = {
-      lastUpdated,
-      milestones: milestoneProps.map((milestone, i) => ({
-        milestone: milestone.milestone,
-        openIssues: milestone.openIssues.daily.count,
-        closedIssues: milestone.closedIssues.daily.count
-      })),
-      openProposals: fetchedOpen.count,
-      closedProposals: fetchedClosed.count
-    };
-    if (lastUpdated.getDate() !== new Date().getDate()) {
-      writeHistory(JSON.stringify(history));
-    } else {
-      overwriteHistory(JSON.stringify(history));
-    }
+    await saveStats(milestoneProps.map(m => m.milestone));
   }
-  const history = readHistory().map((value) => JSON.parse(value) as History);
+  const milestoneHistory = await readMilestoneStats();
+  const proposalHistory = await readProposalStats();
+  const history: History[] = [];
+
 
   const props: HomeProps = {
     milestones: milestoneProps,
     openProposals,
     closedProposals,
     lastUpdated,
-    history
+    proposalHistory,
+    milestoneHistory,
   }
   return {
     props: props

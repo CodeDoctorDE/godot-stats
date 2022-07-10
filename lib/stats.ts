@@ -1,4 +1,4 @@
-import { readLastHistory } from './history';
+import { readLastHistory, readHistory } from './history';
 import dayjs from 'dayjs';
 
 export type Issue = {
@@ -30,7 +30,7 @@ export type Milestone = {
     id: number;
 }
 
-export type TimeSpan = 'daily' | 'weekly' | 'lastHistory';
+export type TimeSpan = 'daily' | 'weekly' | 'lastProposalHistory' | 'lastMilestoneHistory';
 export type Status = 'open' | 'closed';
 
 const getDate = (timeSpan: TimeSpan) => {
@@ -39,12 +39,22 @@ const getDate = (timeSpan: TimeSpan) => {
             return dayjs().subtract(1, 'days').format('YYYY-MM-DD');
         case 'weekly':
             return dayjs().subtract(1, 'weeks').format('YYYY-MM-DD');
-        case 'lastHistory':
-            const lastHistory = readLastHistory();
-            if (lastHistory) {
-                return JSON.parse(lastHistory).lastUpdated;
+        case 'lastProposalHistory':
+            const lastProposalHistory = readHistory('proposals');
+            if (lastProposalHistory) {
+                const keys = Object.keys(lastProposalHistory);
+                const lastDate = keys[keys.length - 1];
+                return lastDate ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
             }
-            return dayjs().format('YYYY-MM-DD');
+            return dayjs().subtract(1, 'day').format('YYYY-MM-DD');
+            case 'lastMilestoneHistory':
+                const lastHistory = readHistory('milestones');
+                if (lastHistory) {
+                    const keys = Object.keys(lastHistory);
+                    const lastDate = keys[keys.length - 1];
+                    return lastDate ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
+                }
+                return dayjs().subtract(1, 'day').format('YYYY-MM-DD');
     }
 }
 
