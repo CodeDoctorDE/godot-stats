@@ -78,9 +78,6 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
     <>
       <Head>
         <title>Godot stats</title>
-        <meta name="description" content="Statistics about the godot engine github repository" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
