@@ -14,16 +14,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: Get current date time
-        shell: bash
-        run: |
-           echo "hour_stamp=$(date +'%Y/%d/%m-%H')" >> $GITHUB_ENV
-      - name: Cache history
-        id: cache-history
-        uses: actions/cache@v3
-        with:
-          path: history
-          key: ${{ env.hour_stamp }}
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -35,6 +25,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WRITE_HISTORY: true
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: history
+          author_name: Linwood CI
+          author_email: ci@linwood.dev
+          commit: --signoff
+          message: "Update history"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
