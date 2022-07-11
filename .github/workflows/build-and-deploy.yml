@@ -14,12 +14,16 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - name: Get current date time
+        shell: bash
+        run: |
+           echo "hour_stamp=$(date +'%Y/%d/%m-%H')" >> $GITHUB_ENV
       - name: Cache history
         id: cache-history
         uses: actions/cache@v3
         with:
           path: history
-          key: history
+          key: ${{ env.hour_stamp }}
       - uses: actions/setup-node@v3
         with:
           node-version: 18
