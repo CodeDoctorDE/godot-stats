@@ -30,6 +30,8 @@ jobs:
           add: history
           author_name: Linwood CI
           author_email: ci@linwood.dev
+          committer_name: Linwood CI
+          committer_email: ci@linwood.dev
           commit: --signoff
           message: "Update history"
       - name: Deploy 🚀

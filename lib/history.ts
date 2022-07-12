@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 // Import fs
 import * as fs from 'fs';
 
-const historySize = 50;
+// const historySize = 50;
 
 export const writeHistory = async (name: string, data: any) => {
     const fileName = `history/${name}.json`;
@@ -11,10 +11,10 @@ export const writeHistory = async (name: string, data: any) => {
     history[date] = data;
     
     fs.writeFileSync(fileName, JSON.stringify(history, null, 2));
-    removeOldHistory(name);
+    // removeOldHistory(name);
 }
 
-export const removeOldHistory = async (data: any) => {
+/*export const removeOldHistory = async (data: any) => {
     const fileName = `history/${data}.json`;
     const history = readHistory(data) ?? {};
     const dates = Object.keys(history);
@@ -23,7 +23,7 @@ export const removeOldHistory = async (data: any) => {
         delete history[date];
     });
     fs.writeFileSync(fileName, JSON.stringify(history));
-}
+}*/
 
 export const readLastHistory = (name: string) => {
     const history = readHistory(name);
