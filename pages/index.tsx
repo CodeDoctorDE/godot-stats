@@ -157,7 +157,7 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
                     {
                       label: "Closed",
                       backgroundColor: '#36A2EB',
-                      data: Object.values(milestoneHistory).map(h => h.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0),
+                      data: Object.values(milestoneHistory).map(h => -(h.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0)),
                       stack: 'Stack 0'
                     }
                   ]
