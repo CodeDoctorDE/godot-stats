@@ -3313,7 +3313,7 @@ __metadata:
     next: 12.2.2
     next-pwa: ^5.5.4
     react: 18.2.0
-    react-chartjs-2: ^4.2.0
+    react-chartjs-2: ^4.3.1
     react-dom: 18.2.0
     sass: ^1.53.0
     typescript: 4.7.4
@@ -4710,13 +4710,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-chartjs-2@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "react-chartjs-2@npm:4.2.0"
+"react-chartjs-2@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "react-chartjs-2@npm:4.3.1"
   peerDependencies:
     chart.js: ^3.5.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: cd266387d23a32d4590f390075fbecf8570678a9d9fb2d71881072dd557eee88777bf3659c19c07967f813c945aa2b34e44a2e820eaaa89b38035f58e7befcf6
+  checksum: 574d12cc43b9b4a0f1e04cc692982e16ef7083c03da2a8a9fc2180fe9bcadc793008f81d8f4eec5465925eff84c95d7c523cb74376858b363ae75a83bb3c2a5d
   languageName: node
   linkType: hard
 

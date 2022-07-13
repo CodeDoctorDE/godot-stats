@@ -36,4 +36,16 @@
     margin: 0;
 }
 
+.compareProgressPlus {
+    color: colors.$plus;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+}
 
+.compareProgressMinus {
+    color: colors.$red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+}

@@ -74,6 +74,9 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
       },
     },
   };
+  const milestoneDays = Object.keys(milestoneHistory);
+  const lastMilestonesDay = milestoneDays.length > 1 ? milestoneDays[milestoneDays.length - 2] : null;
+  const lastMilestones = lastMilestonesDay ? milestoneHistory[lastMilestonesDay] : null;
   return (
     <>
       <Head>
@@ -137,56 +140,65 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
               </Row>
             </Container>
           </Tab>
-          {milestones.map(milestone => (
-            <Tab label={`Issues (${milestone.milestone.title})`} key={milestone.milestone.id}>
-              <Container>
-                <h2>{milestone.milestone.title}</h2>
-                <p>
-                  {milestone.milestone.description}
-                </p>
-                <Compare plus={milestone.milestone.openIssues} minus={milestone.milestone.closedIssues} />
-                <Bar options={barOptions} data={{
-                  labels: Object.keys(milestoneHistory),
-                  datasets: [
-                    {
-                      label: "Open",
-                      backgroundColor: '#FF6384',
-                      data: Object.values(milestoneHistory).map(h => h.find(m => m.milestone.id === milestone.milestone.id)?.openIssues ?? 0),
-                      stack: 'Stack 0'
-                    },
-                    {
-                      label: "Closed",
-                      backgroundColor: '#36A2EB',
-                      data: Object.values(milestoneHistory).map(h => -(h.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0)),
-                      stack: 'Stack 0'
-                    }
-                  ]
-                }} />
-                <Row wrap spacing={16}>
-                  <Panel flex={1}>
-                    <h3>Open issues ({milestone.openIssues[span].count})</h3>
-                    <List>
-                      {milestone.openIssues[span].data.map(issue => (
-                        <ListItem key={issue.id} href={issue.link}>
-                          #{issue.id}: {issue.title}
-                        </ListItem>
-                      ))}
-                    </List>
-                  </Panel>
-                  <Panel flex={1}>
-                    <h3>Closed issues ({milestone.closedIssues[span].count})</h3>
-                    <List>
-                      {milestone.closedIssues[span].data.map(issue => (
-                        <ListItem key={issue.id} href={issue.link}>
-                          #{issue.id}: {issue.title}
-                        </ListItem>
-                      ))}
-                    </List>
-                  </Panel>
-                </Row>
-              </Container>
-            </Tab>
-          )) as ReactElement[]}
+          {milestones.map(milestone => {
+            const lastMilestone = lastMilestones?.find((m) => m.milestone.id === milestone.milestone.id);
+            const lastPlus = lastMilestone?.milestone.openIssues;
+            const lastMinus = lastMilestone?.milestone.closedIssues;
+            return (
+              <Tab label={`Issues (${milestone.milestone.title})`} key={milestone.milestone.id}>
+                <Container>
+                  <h2>{milestone.milestone.title}</h2>
+                  <p>
+                    {milestone.milestone.description}
+                  </p>
+                  <Compare
+                    plus={milestone.milestone.openIssues}
+                    minus={milestone.milestone.closedIssues}
+                    lastPlus={lastPlus}
+                    lastMinus={lastMinus} />
+                  <Bar options={barOptions} data={{
+                    labels: Object.keys(milestoneHistory),
+                    datasets: [
+                      {
+                        label: "Open",
+                        backgroundColor: '#FF6384',
+                        data: Object.values(milestoneHistory).map(h => h.find(m => m.milestone.id === milestone.milestone.id)?.openIssues ?? 0),
+                        stack: 'Stack 0'
+                      },
+                      {
+                        label: "Closed",
+                        backgroundColor: '#36A2EB',
+                        data: Object.values(milestoneHistory).map(h => -(h.find(m => m.milestone.id === milestone.milestone.id)?.closedIssues ?? 0)),
+                        stack: 'Stack 0'
+                      }
+                    ]
+                  }} />
+                  <Row wrap spacing={16}>
+                    <Panel flex={1}>
+                      <h3>Open issues ({milestone.openIssues[span].count})</h3>
+                      <List>
+                        {milestone.openIssues[span].data.map(issue => (
+                          <ListItem key={issue.id} href={issue.link}>
+                            #{issue.id}: {issue.title}
+                          </ListItem>
+                        ))}
+                      </List>
+                    </Panel>
+                    <Panel flex={1}>
+                      <h3>Closed issues ({milestone.closedIssues[span].count})</h3>
+                      <List>
+                        {milestone.closedIssues[span].data.map(issue => (
+                          <ListItem key={issue.id} href={issue.link}>
+                            #{issue.id}: {issue.title}
+                          </ListItem>
+                        ))}
+                      </List>
+                    </Panel>
+                  </Row>
+                </Container>
+              </Tab>
+            )
+          }) as ReactElement[]}
           <Tab label="About">
             <Container>
               <h2>About</h2>
