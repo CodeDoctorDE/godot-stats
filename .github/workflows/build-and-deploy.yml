@@ -32,6 +32,7 @@ jobs:
           add: history
           author_name: Linwood CI
           author_email: ci@linwood.dev
+          default_author: github_actions
           committer_name: Linwood CI
           committer_email: ci@linwood.dev
           commit: --signoff
