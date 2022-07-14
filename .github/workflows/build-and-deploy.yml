@@ -1,6 +1,8 @@
 name: Build and Deploy
 on:
   push: 
+    branches:
+      - main
   schedule:
   - cron: 0 */2 * * *
   workflow_dispatch:
@@ -30,11 +32,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WRITE_HISTORY: true
-      - run: |
+      - if: ${{ github.ref }} == 'main'
+        run: |
           git add history
-          git commit -m "Update history"
+          git diff-index --quiet HEAD || git commit -m "Update history"
           git push origin
       - name: Deploy 🚀
+        if: ${{ github.ref }} == 'main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out # The folder the action should deploy.
