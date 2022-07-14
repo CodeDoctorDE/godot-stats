@@ -12,11 +12,12 @@
   "dependencies": {
     "chart.js": "^3.8.0",
     "dayjs": "^1.11.3",
-    "next": "12.2.2",
+    "next": "^12.2.3-canary.7",
     "next-pwa": "^5.5.4",
     "react": "18.2.0",
     "react-chartjs-2": "^4.3.1",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "webpack": "^5.73.0"
   },
   "devDependencies": {
     "@types/node": "18.0.4",
