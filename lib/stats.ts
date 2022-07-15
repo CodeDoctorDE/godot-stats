@@ -40,21 +40,11 @@ const getDate = (timeSpan: TimeSpan) => {
         case 'weekly':
             return dayjs().subtract(1, 'weeks').format('YYYY-MM-DD');
         case 'lastProposalHistory':
-            const lastProposalHistory = readHistory('proposals');
-            if (lastProposalHistory) {
-                const keys = Object.keys(lastProposalHistory);
-                const lastDate = keys[keys.length - 1];
-                return lastDate ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
-            }
-            return dayjs().subtract(1, 'day').format('YYYY-MM-DD');
-            case 'lastMilestoneHistory':
-                const lastHistory = readHistory('milestones');
-                if (lastHistory) {
-                    const keys = Object.keys(lastHistory);
-                    const lastDate = keys[keys.length - 1];
-                    return lastDate ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
-                }
-                return dayjs().subtract(1, 'day').format('YYYY-MM-DD');
+            const lastProposalHistory = readLastHistory('proposals');
+            return lastProposalHistory?.date ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
+        case 'lastMilestoneHistory':
+            const lastHistory = readLastHistory('milestones');
+            return lastHistory?.date ?? dayjs().subtract(1, 'day').format('YYYY-MM-DD');
     }
 }
 
