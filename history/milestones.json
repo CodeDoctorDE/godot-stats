@@ -268,7 +268,7 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2830,
-        "closedIssues": 14831,
+        "closedIssues": 14833,
         "id": 9
       },
       "openIssues": 12,
@@ -300,11 +300,11 @@
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 384,
+        "openIssues": 385,
         "closedIssues": 20,
         "id": 14
       },
-      "openIssues": 3,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
