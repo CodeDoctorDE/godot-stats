@@ -289,22 +289,22 @@
       "milestone": {
         "title": "3.5",
         "description": "",
-        "openIssues": 405,
+        "openIssues": 406,
         "closedIssues": 1494,
         "id": 13
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 381,
+        "openIssues": 382,
         "closedIssues": 20,
         "id": 14
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
