@@ -346,22 +346,22 @@
       "milestone": {
         "title": "3.5",
         "description": "",
-        "openIssues": 407,
-        "closedIssues": 1496,
+        "openIssues": 406,
+        "closedIssues": 1497,
         "id": 13
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 385,
+        "openIssues": 387,
         "closedIssues": 20,
         "id": 14
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
