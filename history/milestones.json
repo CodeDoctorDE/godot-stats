@@ -438,11 +438,11 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2830,
-        "closedIssues": 14906,
+        "openIssues": 2831,
+        "closedIssues": 14908,
         "id": 9
       },
-      "openIssues": 12,
+      "openIssues": 14,
       "closedIssues": 0
     },
     {
@@ -460,12 +460,12 @@
       "milestone": {
         "title": "3.5",
         "description": "",
-        "openIssues": 397,
-        "closedIssues": 1522,
+        "openIssues": 395,
+        "closedIssues": 1524,
         "id": 13
       },
       "openIssues": 0,
-      "closedIssues": 8
+      "closedIssues": 10
     },
     {
       "milestone": {
