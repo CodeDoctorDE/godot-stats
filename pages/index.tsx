@@ -22,7 +22,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import saveStats, { MilestoneHistory, ProposalHistory, readMilestoneStats, readProposalStats } from '../lib/stats_history'
+import { MilestoneHistory, ProposalHistory, readMilestoneStats, readProposalStats, saveMilestoneStats, saveProposalStats } from '../lib/stats_history'
 
 type HomeProps = {
   milestones: MilestoneProps[],
@@ -219,15 +219,21 @@ export const getStaticProps = async () => {
   const milestones = await fetchMilestones();
   const lastUpdated = new Date().toISOString();
 
+  var nowOpenIssues = 0, nowClosedIssues = 0;
+
   const milestoneProps: MilestoneProps[] = await Promise.all(milestones.map(async milestone => {
     var openIssues = {} as SpanBasedProps<CountedData<Issue>>;
     var closedIssues = {} as SpanBasedProps<CountedData<Issue>>;
-    await Promise.all(['daily', 'weekly'].map(async span => {
-      const fetchedOpen = await fetchIssues({ span: span as TimeSpan, milestone: milestone.title, status: 'open' });
-      const fetchedClosed = await fetchIssues({ span: span as TimeSpan, milestone: milestone.title, status: 'closed' });
+    await Promise.all((['lastMilestoneHistory', 'weekly'] as TimeSpan[]).map(async span => {
+      const fetchedOpen = await fetchIssues({ span: span, milestone: milestone.title, status: 'open' });
+      const fetchedClosed = await fetchIssues({ span: span, milestone: milestone.title, status: 'closed' });
       openIssues[span as TimeSpan] = fetchedOpen;
       closedIssues[span as TimeSpan] = fetchedClosed;
     }));
+    nowOpenIssues += openIssues['lastMilestoneHistory'].count;
+    nowClosedIssues += closedIssues['lastMilestoneHistory'].count;
+    openIssues['daily'] = openIssues['lastMilestoneHistory'];
+    closedIssues['daily'] = closedIssues['lastMilestoneHistory'];
     return {
       milestone,
       openIssues,
@@ -237,21 +243,26 @@ export const getStaticProps = async () => {
 
   const openProposals = {} as SpanBasedProps<CountedData<Issue>>;
   const closedProposals = {} as SpanBasedProps<CountedData<Issue>>;
-  await Promise.all(['daily', 'weekly'].map(async span => {
-    const fetchedOpen = await fetchProposals({ span: span as TimeSpan, status: 'open' });
-    const fetchedClosed = await fetchProposals({ span: span as TimeSpan, status: 'closed' });
+  await Promise.all((['lastProposalHistory', 'weekly'] as TimeSpan[]).map(async span => {
+    const fetchedOpen = await fetchProposals({ span: span, status: 'open' });
+    const fetchedClosed = await fetchProposals({ span: span, status: 'closed' });
     openProposals[span as TimeSpan] = fetchedOpen;
     closedProposals[span as TimeSpan] = fetchedClosed;
   }));
+  openProposals['daily'] = openProposals['lastProposalHistory'];
+  closedProposals['daily'] = closedProposals['lastProposalHistory'];
 
   const shouldWriteHistory = process.env.WRITE_HISTORY === 'true';
   if (shouldWriteHistory) {
-    await saveStats(milestoneProps.map(m => m.milestone));
+    saveProposalStats(nowOpenIssues, nowClosedIssues);
+    saveMilestoneStats(milestoneProps.map(m => ({
+      milestone: m.milestone,
+      openIssues: m.openIssues['lastMilestoneHistory'].count,
+      closedIssues: m.closedIssues['lastMilestoneHistory'].count
+      })));
   }
   const milestoneHistory = await readMilestoneStats();
   const proposalHistory = await readProposalStats();
-  const history: History[] = [];
-
 
   const props: HomeProps = {
     milestones: milestoneProps,

@@ -64,7 +64,6 @@ export const fetchProposals = async ({ span, status }: { span: TimeSpan, status:
     const response = await fetch(`https://api.github.com/search/issues?q=repo%3Agodotengine%2Fgodot-proposals+is%3A${status}+${sort}%3A%3E%3D${getDate(span)}`, {
         headers: generateHeader()
     });
-    console.log(`https://api.github.com/search/issues?q=repo%3Agodotengine%2Fgodot-proposals+is%3A${status}+${sort}%3A%3E%3D${getDate(span)}`);
     const proposals = await response.json() as { items?: IssueReponse[], total_count: number };
     return {
         data: proposals.items?.map(proposal => ({
@@ -80,6 +79,7 @@ export const fetchIssues = async ({ span, milestone, status }: { span: TimeSpan,
     const response = await fetch(`https://api.github.com/search/issues?q=repo%3Agodotengine%2Fgodot+is%3A${status}+${sort}%3A%3E%3D${getDate(span)}+milestone%3A${milestone}`, {
         headers: generateHeader()
     });
+    
     const issues = await response.json() as { items?: IssueReponse[], total_count: number };
     return {
         data: issues.items?.map(proposal => ({
