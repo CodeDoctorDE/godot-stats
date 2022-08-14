@@ -2123,5 +2123,73 @@
       "openIssues": 2,
       "closedIssues": 1
     }
+  ],
+  "2022-08-14": [
+    {
+      "milestone": {
+        "title": "4.0",
+        "description": "",
+        "openIssues": 2850,
+        "closedIssues": 15616,
+        "id": 9
+      },
+      "openIssues": 22,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "4.1",
+        "description": "",
+        "openIssues": 4,
+        "closedIssues": 0,
+        "id": 10
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "3.5",
+        "description": "",
+        "openIssues": 382,
+        "closedIssues": 1587,
+        "id": 13
+      },
+      "openIssues": 0,
+      "closedIssues": 2
+    },
+    {
+      "milestone": {
+        "title": "3.x",
+        "description": "",
+        "openIssues": 401,
+        "closedIssues": 38,
+        "id": 14
+      },
+      "openIssues": 1,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "3.6",
+        "description": "",
+        "openIssues": 22,
+        "closedIssues": 83,
+        "id": 15
+      },
+      "openIssues": 1,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "4.x",
+        "description": "",
+        "openIssues": 48,
+        "closedIssues": 2,
+        "id": 16
+      },
+      "openIssues": 2,
+      "closedIssues": 1
+    }
   ]
 }
