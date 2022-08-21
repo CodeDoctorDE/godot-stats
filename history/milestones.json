@@ -2605,12 +2605,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2849,
+        "openIssues": 2855,
         "closedIssues": 15708,
         "id": 9
       },
-      "openIssues": 22,
-      "closedIssues": 7
+      "openIssues": 7,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -2642,7 +2642,7 @@
         "closedIssues": 45,
         "id": 14
       },
-      "openIssues": 3,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -2664,7 +2664,7 @@
         "closedIssues": 4,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 1
     }
   ]
