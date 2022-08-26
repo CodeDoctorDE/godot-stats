@@ -10,23 +10,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "chart.js": "^3.8.0",
-    "dayjs": "^1.11.4",
-    "next": "^12.2.3-canary.14",
-    "next-pwa": "^5.5.4",
+    "chart.js": "^3.9.1",
+    "dayjs": "^1.11.5",
+    "next": "^12.2.5",
+    "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "18.2.0",
-    "webpack": "^5.73.0"
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
-    "@types/node": "18.0.6",
-    "@types/react": "18.0.15",
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.2",
-    "sass": "^1.53.0",
-    "typescript": "4.7.4"
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "sass": "^1.54.5",
+    "typescript": "4.8.2"
   },
   "packageManager": "yarn@3.2.1"
 }
