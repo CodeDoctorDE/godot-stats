@@ -3082,11 +3082,11 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2747,
-        "closedIssues": 15990,
+        "closedIssues": 15991,
         "id": 9
       },
-      "openIssues": 13,
-      "closedIssues": 23
+      "openIssues": 2,
+      "closedIssues": 1
     },
     {
       "milestone": {
@@ -3129,8 +3129,8 @@
         "closedIssues": 139,
         "id": 15
       },
-      "openIssues": 2,
-      "closedIssues": 2
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -3140,7 +3140,7 @@
         "closedIssues": 7,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 1,
       "closedIssues": 0
     }
   ]
