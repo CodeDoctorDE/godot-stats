@@ -3421,12 +3421,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2710,
-        "closedIssues": 16178,
+        "openIssues": 2705,
+        "closedIssues": 16193,
         "id": 9
       },
-      "openIssues": 6,
-      "closedIssues": 4
+      "openIssues": 8,
+      "closedIssues": 19
     },
     {
       "milestone": {
@@ -3466,17 +3466,17 @@
         "title": "3.6",
         "description": "",
         "openIssues": 14,
-        "closedIssues": 171,
+        "closedIssues": 172,
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 0
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 160,
+        "openIssues": 158,
         "closedIssues": 8,
         "id": 16
       },
