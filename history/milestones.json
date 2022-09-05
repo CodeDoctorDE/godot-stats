@@ -3625,18 +3625,18 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2734,
-        "closedIssues": 16236,
+        "openIssues": 2722,
+        "closedIssues": 16259,
         "id": 9
       },
-      "openIssues": 5,
-      "closedIssues": 5
+      "openIssues": 6,
+      "closedIssues": 28
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 4,
+        "openIssues": 3,
         "closedIssues": 0,
         "id": 10
       },
@@ -3680,7 +3680,7 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 165,
+        "openIssues": 163,
         "closedIssues": 8,
         "id": 16
       },
