@@ -4101,12 +4101,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2738,
-        "closedIssues": 16414,
+        "openIssues": 2741,
+        "closedIssues": 16419,
         "id": 9
       },
-      "openIssues": 9,
-      "closedIssues": 14
+      "openIssues": 18,
+      "closedIssues": 19
     },
     {
       "milestone": {
@@ -4134,33 +4134,33 @@
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 423,
+        "openIssues": 426,
         "closedIssues": 44,
         "id": 14
       },
-      "openIssues": 1,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 22,
+        "openIssues": 24,
         "closedIssues": 207,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 3,
       "closedIssues": 5
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 200,
+        "openIssues": 202,
         "closedIssues": 10,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     }
   ]
