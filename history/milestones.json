@@ -4917,11 +4917,11 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2729,
+        "openIssues": 2748,
         "closedIssues": 16792,
         "id": 9
       },
-      "openIssues": 3,
+      "openIssues": 14,
       "closedIssues": 0
     },
     {
@@ -4961,7 +4961,7 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 27,
+        "openIssues": 28,
         "closedIssues": 243,
         "id": 15
       },
