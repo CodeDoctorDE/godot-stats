@@ -4921,8 +4921,8 @@
         "closedIssues": 16792,
         "id": 9
       },
-      "openIssues": 19,
-      "closedIssues": 18
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -4965,8 +4965,8 @@
         "closedIssues": 243,
         "id": 15
       },
-      "openIssues": 3,
-      "closedIssues": 3
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -4976,7 +4976,7 @@
         "closedIssues": 16,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
