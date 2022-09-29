@@ -5257,12 +5257,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2761,
-        "closedIssues": 16914,
+        "openIssues": 2760,
+        "closedIssues": 16923,
         "id": 9
       },
-      "openIssues": 6,
-      "closedIssues": 1
+      "openIssues": 9,
+      "closedIssues": 9
     },
     {
       "milestone": {
@@ -5301,19 +5301,19 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 28,
-        "closedIssues": 257,
+        "openIssues": 27,
+        "closedIssues": 258,
         "id": 15
       },
-      "openIssues": 1,
-      "closedIssues": 0
+      "openIssues": 0,
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
         "openIssues": 230,
-        "closedIssues": 16,
+        "closedIssues": 15,
         "id": 16
       },
       "openIssues": 0,
