@@ -5795,5 +5795,73 @@
       "openIssues": 0,
       "closedIssues": 0
     }
+  ],
+  "2022-10-07": [
+    {
+      "milestone": {
+        "title": "4.0",
+        "description": "",
+        "openIssues": 2775,
+        "closedIssues": 17169,
+        "id": 9
+      },
+      "openIssues": 14,
+      "closedIssues": 26
+    },
+    {
+      "milestone": {
+        "title": "4.1",
+        "description": "",
+        "openIssues": 4,
+        "closedIssues": 0,
+        "id": 10
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "3.5",
+        "description": "",
+        "openIssues": 369,
+        "closedIssues": 1604,
+        "id": 13
+      },
+      "openIssues": 0,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "3.x",
+        "description": "",
+        "openIssues": 514,
+        "closedIssues": 47,
+        "id": 14
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "3.6",
+        "description": "",
+        "openIssues": 26,
+        "closedIssues": 290,
+        "id": 15
+      },
+      "openIssues": 1,
+      "closedIssues": 4
+    },
+    {
+      "milestone": {
+        "title": "4.x",
+        "description": "",
+        "openIssues": 234,
+        "closedIssues": 16,
+        "id": 16
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    }
   ]
 }
