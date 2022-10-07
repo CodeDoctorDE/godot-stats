@@ -5801,12 +5801,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2781,
-        "closedIssues": 17170,
+        "openIssues": 2776,
+        "closedIssues": 17181,
         "id": 9
       },
-      "openIssues": 4,
-      "closedIssues": 1
+      "openIssues": 6,
+      "closedIssues": 12
     },
     {
       "milestone": {
@@ -5824,7 +5824,7 @@
         "title": "3.5",
         "description": "",
         "openIssues": 369,
-        "closedIssues": 1604,
+        "closedIssues": 1605,
         "id": 13
       },
       "openIssues": 0,
