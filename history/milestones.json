@@ -6141,12 +6141,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2820,
-        "closedIssues": 17306,
+        "openIssues": 2823,
+        "closedIssues": 17309,
         "id": 9
       },
-      "openIssues": 20,
-      "closedIssues": 46
+      "openIssues": 5,
+      "closedIssues": 3
     },
     {
       "milestone": {
@@ -6189,8 +6189,8 @@
         "closedIssues": 295,
         "id": 15
       },
-      "openIssues": 1,
-      "closedIssues": 2
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -6200,7 +6200,7 @@
         "closedIssues": 18,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
