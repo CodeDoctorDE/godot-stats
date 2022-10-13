@@ -6209,12 +6209,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2822,
-        "closedIssues": 17351,
+        "openIssues": 2813,
+        "closedIssues": 17371,
         "id": 9
       },
       "openIssues": 7,
-      "closedIssues": 18
+      "closedIssues": 38
     },
     {
       "milestone": {
@@ -6253,18 +6253,18 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 30,
+        "openIssues": 31,
         "closedIssues": 295,
         "id": 15
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 243,
+        "openIssues": 242,
         "closedIssues": 18,
         "id": 16
       },
