@@ -6277,12 +6277,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2815,
+        "openIssues": 2816,
         "closedIssues": 17375,
         "id": 9
       },
-      "openIssues": 11,
-      "closedIssues": 44
+      "openIssues": 1,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -6325,7 +6325,7 @@
         "closedIssues": 295,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
