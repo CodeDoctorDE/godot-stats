@@ -1,14 +1,13 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ReactElement } from 'react'
 import Compare from '../components/Compare'
 import Container from '../components/Container'
 import List, { ListItem } from '../components/List'
 import Panel from '../components/Panel'
 import Property from '../components/Property'
-import { Flex, Row } from '../components/Layout'
+import { Row } from '../components/Layout'
 import Select from '../components/Select'
 import Tabs, { Tab } from '../components/Tab'
 import { fetchIssues, fetchMilestones, fetchProposals, Issue, Milestone, TimeSpan } from '../lib/stats'
@@ -20,7 +19,7 @@ import {
   BarElement,
   Title,
   Tooltip,
-  Legend,
+  Legend
 } from 'chart.js';
 import { MilestoneHistory, ProposalHistory, readMilestoneStats, readProposalStats, saveMilestoneStats, saveProposalStats } from '../lib/stats_history'
 
@@ -50,21 +49,30 @@ type CountedData<T> = {
 
 
 const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposals, milestones, lastUpdated }: HomeProps) => {
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-  );
+  useEffect(() => {
+    async function registerZoom() {
+      const zoomPlugin = (await import('chartjs-plugin-zoom')).default;
+      ChartJS.register(zoomPlugin);
+      setPluginsLoaded(true);
+    }
+    ChartJS.register(
+      CategoryScale,
+      LinearScale,
+      BarElement,
+      Title,
+      Tooltip,
+      Legend
+    );
+    registerZoom();
+  }, []);
+  const [pluginsLoaded, setPluginsLoaded] = React.useState(false);
   const [span, setSpan] = React.useState<TimeSpan>('daily');
   const barOptions = {
-    responsive: true,
     interaction: {
       mode: 'index' as const,
       intersect: false,
     },
+    responsive: true,
     scales: {
       x: {
         stacked: true,
@@ -73,7 +81,29 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
         stacked: true,
       },
     },
+
+    plugins: {
+      title: {
+        display: true,
+      },
+      zoom: {
+        pan: {
+          enabled: true,
+          mode: 'x' as 'x',
+        },
+        zoom: {
+          pinch: {
+            enabled: true       // Enable pinch zooming
+          },
+          wheel: {
+            enabled: true       // Enable wheel zooming
+          },
+          mode: 'x' as 'x',
+        }
+      },
+    },
   };
+  if (!pluginsLoaded) return <p>Loading...</p>;
   const milestoneDays = Object.keys(milestoneHistory);
   const lastMilestonesDay = milestoneDays.length > 1 ? milestoneDays[milestoneDays.length - 2] : null;
   const lastMilestones = lastMilestonesDay ? milestoneHistory[lastMilestonesDay] : null;
@@ -259,7 +289,7 @@ export const getStaticProps = async () => {
       milestone: m.milestone,
       openIssues: m.openIssues['lastMilestoneHistory'].count,
       closedIssues: m.closedIssues['lastMilestoneHistory'].count
-      })));
+    })));
   }
   const milestoneHistory = await readMilestoneStats();
   const proposalHistory = await readProposalStats();
