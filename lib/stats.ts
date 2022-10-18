@@ -1,4 +1,4 @@
-import { readLastHistory, readHistory } from './history';
+import { readLastHistory } from './history';
 import dayjs from 'dayjs';
 
 export type Issue = {

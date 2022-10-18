@@ -285,8 +285,8 @@ export const getStaticProps = async () => {
     saveProposalStats(nowOpenIssues, nowClosedIssues);
     saveMilestoneStats(milestoneProps.map(m => ({
       milestone: m.milestone,
-      openIssues: m.openIssues['lastMilestoneHistory'].count,
-      closedIssues: m.closedIssues['lastMilestoneHistory'].count
+      openIssues: m.openIssues['daily'].count,
+      closedIssues: m.closedIssues['daily'].count
     })));
   }
   const milestoneHistory = await readMilestoneStats();
