@@ -6553,8 +6553,8 @@
         "closedIssues": 17447,
         "id": 9
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 14,
+      "closedIssues": 28
     },
     {
       "milestone": {
@@ -6609,7 +6609,7 @@
         "id": 16
       },
       "openIssues": 0,
-      "closedIssues": 0
+      "closedIssues": 1
     }
   ]
 }
