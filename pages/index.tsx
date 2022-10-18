@@ -81,7 +81,7 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
                     <List>
                       {openProposals[span].data.map(issue => (
                         <ListItem key={issue.id} href={issue.link}>
-                          #{issue.id}: {issue.title}
+                          #{issue.number}: {issue.title}
                         </ListItem>
                       ))}
                     </List>
@@ -91,7 +91,7 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
                     <List>
                       {closedProposals[span].data.map(issue => (
                         <ListItem key={issue.id} href={issue.link}>
-                          #{issue.id}: {issue.title}
+                          #{issue.number}: {issue.title}
                         </ListItem>
                       ))}
                     </List>

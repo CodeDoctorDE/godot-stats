@@ -5,12 +5,14 @@ export type Issue = {
     id: number;
     title: string;
     link: string;
+    number: number;
 }
 
 type IssueReponse = {
     html_url: string;
     title: string;
     id: number;
+    number: number;
 }
 
 type MilestoneResponse = {
@@ -70,7 +72,8 @@ export const fetchProposals = async ({ span, status }: { span: TimeSpan, status:
         data: proposals.items?.map(proposal => ({
             id: proposal.id,
             title: proposal.title,
-            link: proposal.html_url
+            link: proposal.html_url,
+            number: proposal.number
         }) as Issue) ?? [], count: proposals.total_count ?? 0
     };
 }
@@ -84,10 +87,11 @@ export const fetchIssues = async ({ span, milestone, status }: { span: TimeSpan,
     
     const issues = await response.json() as { items?: IssueReponse[], total_count: number };
     return {
-        data: issues.items?.map(proposal => ({
-            id: proposal.id,
-            title: proposal.title,
-            link: proposal.html_url
+        data: issues.items?.map(issue => ({
+            id: issue.id,
+            title: issue.title,
+            link: issue.html_url,
+            number: issue.number
         }) as Issue) ?? [], count: issues.total_count ?? 0
     };
 }
