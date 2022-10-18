@@ -115,7 +115,14 @@ const Home = ({ milestoneHistory, proposalHistory, openProposals, closedProposal
                       minus={milestone.milestone.closedIssues}
                       lastPlus={lastPlus}
                       lastMinus={lastMinus} />
-                    <DynamicStats history={Object.fromEntries(Object.entries(milestoneHistory).map((e) => [e[0], e[1].filter((e) => e.milestone.id == milestone.milestone.id)[0]]))} />
+                    <DynamicStats history={Object.fromEntries(Object.entries(milestoneHistory).map((e) => {
+                      const histories = e[1].filter((e) => e.milestone.id == milestone.milestone.id);
+                      const current = histories.length > 0 ? histories[0] : null;
+                      return [e[0], {
+                        openIssues: current?.openIssues ?? NaN,
+                        closedIssues: current?.closedIssues ?? NaN
+                      }]
+                    }))} />
                     <Row wrap spacing={16}>
                       <Panel flex={1}>
                         <h3>Open issues ({milestone.openIssues[span].count})</h3>
