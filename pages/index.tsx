@@ -254,16 +254,16 @@ export const getStaticProps = async () => {
   const milestoneProps: MilestoneProps[] = await Promise.all(milestones.map(async milestone => {
     var openIssues = {} as SpanBasedProps<CountedData<Issue>>;
     var closedIssues = {} as SpanBasedProps<CountedData<Issue>>;
-    await Promise.all((['lastMilestoneHistory', 'weekly'] as TimeSpan[]).map(async span => {
+    await Promise.all((['daily', 'weekly'] as TimeSpan[]).map(async span => {
       const fetchedOpen = await fetchIssues({ span: span, milestone: milestone.title, status: 'open' });
       const fetchedClosed = await fetchIssues({ span: span, milestone: milestone.title, status: 'closed' });
       openIssues[span as TimeSpan] = fetchedOpen;
       closedIssues[span as TimeSpan] = fetchedClosed;
     }));
-    nowOpenIssues += openIssues['lastMilestoneHistory'].count;
-    nowClosedIssues += closedIssues['lastMilestoneHistory'].count;
-    openIssues['daily'] = openIssues['lastMilestoneHistory'];
-    closedIssues['daily'] = closedIssues['lastMilestoneHistory'];
+    nowOpenIssues += openIssues['daily'].count;
+    nowClosedIssues += closedIssues['daily'].count;
+    openIssues['daily'] = openIssues['daily'];
+    closedIssues['daily'] = closedIssues['daily'];
     return {
       milestone,
       openIssues,
@@ -273,15 +273,13 @@ export const getStaticProps = async () => {
 
   const openProposals = {} as SpanBasedProps<CountedData<Issue>>;
   const closedProposals = {} as SpanBasedProps<CountedData<Issue>>;
-  await Promise.all((['lastProposalHistory', 'weekly'] as TimeSpan[]).map(async span => {
+  await Promise.all((['daily', 'weekly'] as TimeSpan[]).map(async span => {
     const fetchedOpen = await fetchProposals({ span: span, status: 'open' });
     const fetchedClosed = await fetchProposals({ span: span, status: 'closed' });
     openProposals[span as TimeSpan] = fetchedOpen;
     closedProposals[span as TimeSpan] = fetchedClosed;
   }));
-  openProposals['daily'] = openProposals['lastProposalHistory'];
-  closedProposals['daily'] = closedProposals['lastProposalHistory'];
-
+  
   const shouldWriteHistory = process.env.WRITE_HISTORY === 'true';
   if (shouldWriteHistory) {
     saveProposalStats(nowOpenIssues, nowClosedIssues);
