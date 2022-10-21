@@ -6753,7 +6753,7 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2895,
+        "openIssues": 2897,
         "closedIssues": 17475,
         "id": 9
       },
@@ -6797,11 +6797,11 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 40,
+        "openIssues": 41,
         "closedIssues": 299,
         "id": 15
       },
-      "openIssues": 2,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
@@ -6812,7 +6812,7 @@
         "closedIssues": 21,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 1
     }
   ]
