@@ -6957,11 +6957,11 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2930,
-        "closedIssues": 17509,
+        "openIssues": 2937,
+        "closedIssues": 17510,
         "id": 9
       },
-      "openIssues": 10,
+      "openIssues": 15,
       "closedIssues": 12
     },
     {
@@ -7012,7 +7012,7 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 261,
+        "openIssues": 262,
         "closedIssues": 24,
         "id": 16
       },
