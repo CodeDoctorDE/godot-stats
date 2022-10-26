@@ -7093,12 +7093,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2952,
-        "closedIssues": 17525,
+        "openIssues": 2951,
+        "closedIssues": 17526,
         "id": 9
       },
-      "openIssues": 12,
-      "closedIssues": 12
+      "openIssues": 11,
+      "closedIssues": 13
     },
     {
       "milestone": {
@@ -7130,7 +7130,7 @@
         "closedIssues": 49,
         "id": 14
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
