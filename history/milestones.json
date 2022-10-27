@@ -7161,12 +7161,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2969,
+        "openIssues": 2971,
         "closedIssues": 17530,
         "id": 9
       },
       "openIssues": 16,
-      "closedIssues": 4
+      "closedIssues": 3
     },
     {
       "milestone": {
@@ -7194,11 +7194,11 @@
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 523,
+        "openIssues": 524,
         "closedIssues": 49,
         "id": 14
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
