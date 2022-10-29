@@ -7297,12 +7297,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2974,
-        "closedIssues": 17566,
+        "openIssues": 2978,
+        "closedIssues": 17568,
         "id": 9
       },
-      "openIssues": 14,
-      "closedIssues": 15
+      "openIssues": 15,
+      "closedIssues": 14
     },
     {
       "milestone": {
@@ -7341,22 +7341,22 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 47,
-        "closedIssues": 301,
+        "openIssues": 45,
+        "closedIssues": 303,
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 0
+      "closedIssues": 2
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 263,
+        "openIssues": 264,
         "closedIssues": 27,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 2,
       "closedIssues": 0
     }
   ]
