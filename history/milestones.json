@@ -7365,11 +7365,11 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2978,
-        "closedIssues": 17576,
+        "openIssues": 2981,
+        "closedIssues": 17578,
         "id": 9
       },
-      "openIssues": 12,
+      "openIssues": 11,
       "closedIssues": 10
     },
     {
@@ -7414,17 +7414,17 @@
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 2
+      "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 263,
+        "openIssues": 264,
         "closedIssues": 28,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 1
     }
   ]
