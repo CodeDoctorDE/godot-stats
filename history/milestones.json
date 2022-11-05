@@ -7773,12 +7773,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2924,
-        "closedIssues": 17802,
+        "openIssues": 2925,
+        "closedIssues": 17803,
         "id": 9
       },
-      "openIssues": 10,
-      "closedIssues": 20
+      "openIssues": 8,
+      "closedIssues": 5
     },
     {
       "milestone": {
@@ -7821,7 +7821,7 @@
         "closedIssues": 328,
         "id": 15
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
@@ -7833,7 +7833,7 @@
         "id": 16
       },
       "openIssues": 2,
-      "closedIssues": 2
+      "closedIssues": 1
     }
   ]
 }
