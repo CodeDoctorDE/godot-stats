@@ -8386,11 +8386,11 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2976,
-        "closedIssues": 17941,
+        "closedIssues": 17952,
         "id": 9
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 13,
+      "closedIssues": 25
     },
     {
       "milestone": {
@@ -8412,7 +8412,7 @@
         "id": 13
       },
       "openIssues": 0,
-      "closedIssues": 0
+      "closedIssues": 1
     },
     {
       "milestone": {
@@ -8430,21 +8430,21 @@
         "title": "3.6",
         "description": "",
         "openIssues": 45,
-        "closedIssues": 333,
+        "closedIssues": 334,
         "id": 15
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 2,
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 270,
+        "openIssues": 268,
         "closedIssues": 26,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 3,
       "closedIssues": 0
     }
   ]
