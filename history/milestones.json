@@ -8521,12 +8521,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2923,
-        "closedIssues": 18065,
+        "openIssues": 2922,
+        "closedIssues": 18072,
         "id": 9
       },
       "openIssues": 12,
-      "closedIssues": 45
+      "closedIssues": 32
     },
     {
       "milestone": {
@@ -8565,22 +8565,22 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 42,
+        "openIssues": 44,
         "closedIssues": 349,
         "id": 15
       },
-      "openIssues": 2,
-      "closedIssues": 1
+      "openIssues": 4,
+      "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 270,
-        "closedIssues": 27,
+        "openIssues": 272,
+        "closedIssues": 24,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 2,
       "closedIssues": 0
     }
   ]
