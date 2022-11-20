@@ -8794,11 +8794,11 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2928,
-        "closedIssues": 18175,
+        "closedIssues": 18185,
         "id": 9
       },
-      "openIssues": 11,
-      "closedIssues": 19
+      "openIssues": 10,
+      "closedIssues": 28
     },
     {
       "milestone": {
@@ -8831,7 +8831,7 @@
         "id": 14
       },
       "openIssues": 0,
-      "closedIssues": 1
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -8841,7 +8841,7 @@
         "closedIssues": 358,
         "id": 15
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 1
     },
     {
