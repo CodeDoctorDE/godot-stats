@@ -9201,12 +9201,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2902,
-        "closedIssues": 18375,
+        "openIssues": 2924,
+        "closedIssues": 18377,
         "id": 9
       },
-      "openIssues": 18,
-      "closedIssues": 29
+      "openIssues": 25,
+      "closedIssues": 25
     },
     {
       "milestone": {
@@ -9234,7 +9234,7 @@
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 544,
+        "openIssues": 545,
         "closedIssues": 51,
         "id": 14
       },
@@ -9256,7 +9256,7 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 307,
+        "openIssues": 308,
         "closedIssues": 29,
         "id": 16
       },
