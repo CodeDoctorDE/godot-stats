@@ -9541,12 +9541,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2916,
-        "closedIssues": 18486,
+        "openIssues": 2908,
+        "closedIssues": 18504,
         "id": 9
       },
       "openIssues": 14,
-      "closedIssues": 16
+      "closedIssues": 26
     },
     {
       "milestone": {
@@ -9586,21 +9586,21 @@
         "title": "3.6",
         "description": "",
         "openIssues": 50,
-        "closedIssues": 385,
+        "closedIssues": 387,
         "id": 15
       },
-      "openIssues": 2,
-      "closedIssues": 3
+      "openIssues": 0,
+      "closedIssues": 5
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 310,
+        "openIssues": 309,
         "closedIssues": 33,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 1
     }
   ]
