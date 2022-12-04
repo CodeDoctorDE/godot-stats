@@ -9745,12 +9745,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2919,
-        "closedIssues": 18555,
+        "openIssues": 2929,
+        "closedIssues": 18556,
         "id": 9
       },
-      "openIssues": 5,
-      "closedIssues": 16
+      "openIssues": 9,
+      "closedIssues": 6
     },
     {
       "milestone": {
@@ -9778,18 +9778,18 @@
       "milestone": {
         "title": "3.x",
         "description": "",
-        "openIssues": 552,
+        "openIssues": 553,
         "closedIssues": 51,
         "id": 14
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 50,
+        "openIssues": 51,
         "closedIssues": 389,
         "id": 15
       },
@@ -9800,7 +9800,7 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 310,
+        "openIssues": 309,
         "closedIssues": 33,
         "id": 16
       },
