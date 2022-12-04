@@ -9745,12 +9745,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2929,
-        "closedIssues": 18556,
+        "openIssues": 2931,
+        "closedIssues": 18558,
         "id": 9
       },
-      "openIssues": 9,
-      "closedIssues": 6
+      "openIssues": 11,
+      "closedIssues": 7
     },
     {
       "milestone": {
@@ -9789,12 +9789,12 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 51,
-        "closedIssues": 389,
+        "openIssues": 53,
+        "closedIssues": 390,
         "id": 15
       },
-      "openIssues": 1,
-      "closedIssues": 0
+      "openIssues": 3,
+      "closedIssues": 1
     },
     {
       "milestone": {
