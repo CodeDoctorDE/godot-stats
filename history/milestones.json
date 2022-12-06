@@ -9881,12 +9881,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2900,
-        "closedIssues": 18672,
+        "openIssues": 2895,
+        "closedIssues": 18688,
         "id": 9
       },
-      "openIssues": 23,
-      "closedIssues": 71
+      "openIssues": 19,
+      "closedIssues": 58
     },
     {
       "milestone": {
@@ -9940,7 +9940,7 @@
         "closedIssues": 26,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 3,
       "closedIssues": 0
     }
   ]
