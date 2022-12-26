@@ -11242,10 +11242,10 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2904,
-        "closedIssues": 19244,
+        "closedIssues": 19241,
         "id": 9
       },
-      "openIssues": 11,
+      "openIssues": 8,
       "closedIssues": 2
     },
     {
@@ -11278,7 +11278,7 @@
         "closedIssues": 58,
         "id": 14
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -11297,10 +11297,10 @@
         "title": "4.x",
         "description": "",
         "openIssues": 358,
-        "closedIssues": 41,
+        "closedIssues": 40,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
