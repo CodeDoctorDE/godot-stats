@@ -11922,11 +11922,11 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2977,
-        "closedIssues": 19354,
+        "closedIssues": 19355,
         "id": 9
       },
-      "openIssues": 18,
-      "closedIssues": 4
+      "openIssues": 14,
+      "closedIssues": 5
     },
     {
       "milestone": {
@@ -11948,7 +11948,7 @@
         "id": 13
       },
       "openIssues": 0,
-      "closedIssues": 1
+      "closedIssues": 0
     },
     {
       "milestone": {
