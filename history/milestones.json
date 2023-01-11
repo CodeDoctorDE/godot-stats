@@ -12329,12 +12329,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2913,
-        "closedIssues": 19556,
+        "openIssues": 2914,
+        "closedIssues": 19568,
         "id": 9
       },
-      "openIssues": 14,
-      "closedIssues": 37
+      "openIssues": 13,
+      "closedIssues": 30
     },
     {
       "milestone": {
@@ -12366,19 +12366,19 @@
         "closedIssues": 60,
         "id": 14
       },
-      "openIssues": 2,
-      "closedIssues": 1
+      "openIssues": 1,
+      "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 62,
-        "closedIssues": 474,
+        "openIssues": 61,
+        "closedIssues": 475,
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 3
+      "closedIssues": 1
     },
     {
       "milestone": {
