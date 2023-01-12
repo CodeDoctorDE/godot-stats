@@ -12397,12 +12397,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2910,
+        "openIssues": 2911,
         "closedIssues": 19587,
         "id": 9
       },
       "openIssues": 16,
-      "closedIssues": 32
+      "closedIssues": 31
     },
     {
       "milestone": {
@@ -12434,7 +12434,7 @@
         "closedIssues": 61,
         "id": 14
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 1
     },
     {
