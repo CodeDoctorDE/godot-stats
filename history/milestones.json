@@ -12670,11 +12670,11 @@
         "title": "4.0",
         "description": "",
         "openIssues": 2683,
-        "closedIssues": 19769,
+        "closedIssues": 19770,
         "id": 9
       },
-      "openIssues": 20,
-      "closedIssues": 16
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -12724,11 +12724,11 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 602,
+        "openIssues": 603,
         "closedIssues": 44,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
