@@ -13213,12 +13213,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2519,
-        "closedIssues": 20174,
+        "openIssues": 2508,
+        "closedIssues": 20194,
         "id": 9
       },
-      "openIssues": 17,
-      "closedIssues": 75
+      "openIssues": 14,
+      "closedIssues": 63
     },
     {
       "milestone": {
@@ -13257,22 +13257,22 @@
       "milestone": {
         "title": "3.6",
         "description": "",
-        "openIssues": 67,
+        "openIssues": 69,
         "closedIssues": 496,
         "id": 15
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 8
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 714,
+        "openIssues": 715,
         "closedIssues": 51,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 6,
       "closedIssues": 2
     }
   ]
