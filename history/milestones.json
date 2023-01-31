@@ -13689,12 +13689,12 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2365,
-        "closedIssues": 20570,
+        "openIssues": 2346,
+        "closedIssues": 20622,
         "id": 9
       },
-      "openIssues": 21,
-      "closedIssues": 70
+      "openIssues": 25,
+      "closedIssues": 100
     },
     {
       "milestone": {
@@ -13737,14 +13737,14 @@
         "closedIssues": 505,
         "id": 15
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 766,
+        "openIssues": 765,
         "closedIssues": 58,
         "id": 16
       },
