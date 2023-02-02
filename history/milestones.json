@@ -13825,18 +13825,18 @@
       "milestone": {
         "title": "4.0",
         "description": "",
-        "openIssues": 2299,
-        "closedIssues": 20738,
+        "openIssues": 2286,
+        "closedIssues": 20764,
         "id": 9
       },
-      "openIssues": 28,
-      "closedIssues": 70
+      "openIssues": 20,
+      "closedIssues": 36
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 44,
+        "openIssues": 46,
         "closedIssues": 0,
         "id": 10
       },
@@ -13874,17 +13874,17 @@
         "id": 15
       },
       "openIssues": 1,
-      "closedIssues": 5
+      "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 791,
+        "openIssues": 794,
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 6,
       "closedIssues": 0
     }
   ]
