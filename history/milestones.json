@@ -14034,17 +14034,17 @@
         "id": 9
       },
       "openIssues": 8,
-      "closedIssues": 7
+      "closedIssues": 6
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 48,
+        "openIssues": 49,
         "closedIssues": 0,
         "id": 10
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
@@ -14084,11 +14084,11 @@
       "milestone": {
         "title": "4.x",
         "description": "",
-        "openIssues": 809,
+        "openIssues": 812,
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 6,
       "closedIssues": 0
     }
   ]
