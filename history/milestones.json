@@ -14505,55 +14505,55 @@
       "milestone": {
         "title": "4.0",
         "description": "The first stable release of Godot 4, featuring major changes and improvements to the core systems, rendering, physics, audio, animations, GUI, navigation, networking, and user experience.",
-        "openIssues": 1749,
-        "closedIssues": 21146,
+        "openIssues": 1726,
+        "closedIssues": 21159,
         "id": 9
       },
       "openIssues": 5,
-      "closedIssues": 82
+      "closedIssues": 60
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 316,
-        "closedIssues": 0,
+        "openIssues": 324,
+        "closedIssues": 1,
         "id": 10
       },
       "openIssues": 1,
-      "closedIssues": 0
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "3.x",
         "description": "Issues and pull requests slated for an undetermined Godot 3 release.",
-        "openIssues": 596,
-        "closedIssues": 75,
+        "openIssues": 604,
+        "closedIssues": 76,
         "id": 14
       },
       "openIssues": 0,
-      "closedIssues": 0
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "3.6",
         "description": "The LTS version of Godot 3, stable and battle-tested with years of improvements and released projects.",
-        "openIssues": 70,
+        "openIssues": 71,
         "closedIssues": 513,
         "id": 15
       },
       "openIssues": 2,
-      "closedIssues": 2
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
-        "openIssues": 1017,
-        "closedIssues": 4,
+        "openIssues": 1025,
+        "closedIssues": 5,
         "id": 16
       },
-      "openIssues": 7,
+      "openIssues": 5,
       "closedIssues": 2
     }
   ]
