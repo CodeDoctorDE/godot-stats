@@ -14952,14 +14952,14 @@
         "closedIssues": 21488,
         "id": 9
       },
-      "openIssues": 7,
-      "closedIssues": 26
+      "openIssues": 5,
+      "closedIssues": 22
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 558,
+        "openIssues": 559,
         "closedIssues": 4,
         "id": 10
       },
@@ -14996,7 +14996,7 @@
         "closedIssues": 8,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
