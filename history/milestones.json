@@ -15424,22 +15424,22 @@
       "milestone": {
         "title": "4.0",
         "description": "The first stable release of Godot 4, featuring major changes and improvements to the core systems, rendering, physics, audio, animations, GUI, navigation, networking, and user experience.",
-        "openIssues": 349,
-        "closedIssues": 21882,
+        "openIssues": 350,
+        "closedIssues": 21884,
         "id": 9
       },
-      "openIssues": 7,
-      "closedIssues": 7
+      "openIssues": 9,
+      "closedIssues": 9
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 772,
+        "openIssues": 777,
         "closedIssues": 3,
         "id": 10
       },
-      "openIssues": 5,
+      "openIssues": 8,
       "closedIssues": 1
     },
     {
@@ -15472,7 +15472,7 @@
         "closedIssues": 5,
         "id": 16
       },
-      "openIssues": 18,
+      "openIssues": 14,
       "closedIssues": 1
     },
     {
