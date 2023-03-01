@@ -15622,5 +15622,73 @@
       "openIssues": 0,
       "closedIssues": 7
     }
+  ],
+  "2023-03-01": [
+    {
+      "milestone": {
+        "title": "4.1",
+        "description": "",
+        "openIssues": 993,
+        "closedIssues": 1,
+        "id": 10
+      },
+      "openIssues": 11,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "3.x",
+        "description": "Issues and pull requests slated for an undetermined Godot 3 release.",
+        "openIssues": 670,
+        "closedIssues": 81,
+        "id": 14
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "3.6",
+        "description": "The LTS version of Godot 3, stable and battle-tested with years of improvements and released projects.",
+        "openIssues": 74,
+        "closedIssues": 535,
+        "id": 15
+      },
+      "openIssues": 1,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "4.x",
+        "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
+        "openIssues": 1804,
+        "closedIssues": 2,
+        "id": 16
+      },
+      "openIssues": 8,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "5.0",
+        "description": "Issues that break compatibility and will have to wait for Godot 5.0. Hopefully we will have many 4.x releases, so hopefully 5.0 will be in a decade or more, the issues tracked here will not be solved any time soon.",
+        "openIssues": 4,
+        "closedIssues": 0,
+        "id": 17
+      },
+      "openIssues": 0,
+      "closedIssues": 0
+    },
+    {
+      "milestone": {
+        "title": "4.0",
+        "description": "The first stable release of Godot 4, featuring major changes and improvements to the core systems, rendering, physics, audio, animations, GUI, navigation, networking, and user experience.",
+        "openIssues": 0,
+        "closedIssues": 21972,
+        "id": 9
+      },
+      "openIssues": 0,
+      "closedIssues": 3
+    }
   ]
 }
