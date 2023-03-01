@@ -15628,18 +15628,18 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 993,
-        "closedIssues": 1,
+        "openIssues": 996,
+        "closedIssues": 0,
         "id": 10
       },
-      "openIssues": 10,
+      "openIssues": 11,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "3.x",
         "description": "Issues and pull requests slated for an undetermined Godot 3 release.",
-        "openIssues": 670,
+        "openIssues": 671,
         "closedIssues": 81,
         "id": 14
       },
@@ -15661,12 +15661,12 @@
       "milestone": {
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
-        "openIssues": 1807,
+        "openIssues": 1810,
         "closedIssues": 2,
         "id": 16
       },
-      "openIssues": 8,
-      "closedIssues": 1
+      "openIssues": 10,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -15684,7 +15684,7 @@
         "title": "4.0",
         "description": "The first stable release of Godot 4, featuring major changes and improvements to the core systems, rendering, physics, audio, animations, GUI, navigation, networking, and user experience.",
         "openIssues": 0,
-        "closedIssues": 21972,
+        "closedIssues": 21973,
         "id": 9
       },
       "openIssues": 0,
