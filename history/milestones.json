@@ -16086,12 +16086,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1043,
+        "openIssues": 1053,
         "closedIssues": 198,
         "id": 10
       },
-      "openIssues": 22,
-      "closedIssues": 14
+      "openIssues": 27,
+      "closedIssues": 4
     },
     {
       "milestone": {
@@ -16102,7 +16102,7 @@
         "id": 14
       },
       "openIssues": 0,
-      "closedIssues": 1
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -16112,7 +16112,7 @@
         "closedIssues": 548,
         "id": 15
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
@@ -16123,7 +16123,7 @@
         "closedIssues": 9,
         "id": 16
       },
-      "openIssues": 10,
+      "openIssues": 8,
       "closedIssues": 0
     }
   ]
