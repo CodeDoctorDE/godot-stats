@@ -16132,12 +16132,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1041,
+        "openIssues": 1042,
         "closedIssues": 226,
         "id": 10
       },
-      "openIssues": 13,
-      "closedIssues": 28
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -16147,7 +16147,7 @@
         "closedIssues": 83,
         "id": 14
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -16158,7 +16158,7 @@
         "closedIssues": 548,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -16169,8 +16169,8 @@
         "closedIssues": 12,
         "id": 16
       },
-      "openIssues": 6,
-      "closedIssues": 2
+      "openIssues": 0,
+      "closedIssues": 0
     }
   ]
 }
