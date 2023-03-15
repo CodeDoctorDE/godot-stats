@@ -16316,12 +16316,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1073,
+        "openIssues": 1077,
         "closedIssues": 233,
         "id": 10
       },
-      "openIssues": 6,
-      "closedIssues": 1
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -16331,7 +16331,7 @@
         "closedIssues": 83,
         "id": 14
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -16353,8 +16353,8 @@
         "closedIssues": 16,
         "id": 16
       },
-      "openIssues": 8,
-      "closedIssues": 2
+      "openIssues": 0,
+      "closedIssues": 0
     }
   ]
 }
