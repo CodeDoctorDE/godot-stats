@@ -17144,12 +17144,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1130,
-        "closedIssues": 424,
+        "openIssues": 1132,
+        "closedIssues": 425,
         "id": 10
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 7,
+      "closedIssues": 1
     },
     {
       "milestone": {
@@ -17181,7 +17181,7 @@
         "closedIssues": 30,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 3,
       "closedIssues": 0
     }
   ]
