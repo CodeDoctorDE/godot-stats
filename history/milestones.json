@@ -17190,12 +17190,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1127,
+        "openIssues": 1129,
         "closedIssues": 436,
         "id": 10
       },
-      "openIssues": 4,
-      "closedIssues": 12
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -17227,7 +17227,7 @@
         "closedIssues": 30,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
