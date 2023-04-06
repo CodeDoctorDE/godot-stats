@@ -17328,12 +17328,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1119,
+        "openIssues": 1124,
         "closedIssues": 506,
         "id": 10
       },
-      "openIssues": 8,
-      "closedIssues": 23
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -17354,7 +17354,7 @@
         "closedIssues": 559,
         "id": 15
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -17365,8 +17365,8 @@
         "closedIssues": 32,
         "id": 16
       },
-      "openIssues": 6,
-      "closedIssues": 1
+      "openIssues": 0,
+      "closedIssues": 0
     }
   ]
 }
