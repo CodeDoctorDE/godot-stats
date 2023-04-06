@@ -17328,11 +17328,11 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1126,
-        "closedIssues": 506,
+        "openIssues": 1133,
+        "closedIssues": 507,
         "id": 10
       },
-      "openIssues": 11,
+      "openIssues": 14,
       "closedIssues": 10
     },
     {
@@ -17354,7 +17354,7 @@
         "closedIssues": 559,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -17365,7 +17365,7 @@
         "closedIssues": 32,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 1
     }
   ]
