@@ -17466,12 +17466,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1144,
+        "openIssues": 1145,
         "closedIssues": 533,
         "id": 10
       },
-      "openIssues": 9,
-      "closedIssues": 6
+      "openIssues": 5,
+      "closedIssues": 4
     },
     {
       "milestone": {
@@ -17503,7 +17503,7 @@
         "closedIssues": 34,
         "id": 16
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
