@@ -17558,12 +17558,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1155,
+        "openIssues": 1156,
         "closedIssues": 553,
         "id": 10
       },
-      "openIssues": 12,
-      "closedIssues": 20
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -17584,7 +17584,7 @@
         "closedIssues": 559,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -17595,8 +17595,8 @@
         "closedIssues": 36,
         "id": 16
       },
-      "openIssues": 6,
-      "closedIssues": 2
+      "openIssues": 0,
+      "closedIssues": 0
     }
   ]
 }
