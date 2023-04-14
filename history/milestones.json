@@ -17696,12 +17696,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1147,
-        "closedIssues": 652,
+        "openIssues": 1146,
+        "closedIssues": 658,
         "id": 10
       },
-      "openIssues": 8,
-      "closedIssues": 7
+      "openIssues": 10,
+      "closedIssues": 13
     },
     {
       "milestone": {
@@ -17723,7 +17723,7 @@
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 1
+      "closedIssues": 0
     },
     {
       "milestone": {
