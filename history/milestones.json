@@ -17834,11 +17834,11 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1166,
+        "openIssues": 1167,
         "closedIssues": 657,
         "id": 10
       },
-      "openIssues": 11,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -17871,7 +17871,7 @@
         "closedIssues": 47,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
