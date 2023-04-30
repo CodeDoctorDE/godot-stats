@@ -18432,11 +18432,11 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1169,
+        "openIssues": 1171,
         "closedIssues": 897,
         "id": 10
       },
-      "openIssues": 4,
+      "openIssues": 5,
       "closedIssues": 1
     },
     {
@@ -18469,7 +18469,7 @@
         "closedIssues": 60,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 1
     }
   ]
