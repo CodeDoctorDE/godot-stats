@@ -18666,7 +18666,7 @@
         "closedIssues": 910,
         "id": 10
       },
-      "openIssues": 2,
+      "openIssues": 0,
       "closedIssues": 1
     },
     {
@@ -18688,7 +18688,7 @@
         "closedIssues": 605,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -18699,8 +18699,8 @@
         "closedIssues": 70,
         "id": 16
       },
-      "openIssues": 4,
-      "closedIssues": 1
+      "openIssues": 3,
+      "closedIssues": 0
     }
   ]
 }
