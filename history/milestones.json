@@ -18886,5 +18886,51 @@
       "openIssues": 2,
       "closedIssues": 2
     }
+  ],
+  "2023-05-10": [
+    {
+      "milestone": {
+        "title": "4.1",
+        "description": "",
+        "openIssues": 1173,
+        "closedIssues": 1016,
+        "id": 10
+      },
+      "openIssues": 2,
+      "closedIssues": 33
+    },
+    {
+      "milestone": {
+        "title": "3.x",
+        "description": "Issues and pull requests slated for an undetermined Godot 3 release.",
+        "openIssues": 717,
+        "closedIssues": 85,
+        "id": 14
+      },
+      "openIssues": 1,
+      "closedIssues": 1
+    },
+    {
+      "milestone": {
+        "title": "3.6",
+        "description": "The LTS version of Godot 3, stable and battle-tested with years of improvements and released projects.",
+        "openIssues": 86,
+        "closedIssues": 616,
+        "id": 15
+      },
+      "openIssues": 0,
+      "closedIssues": 2
+    },
+    {
+      "milestone": {
+        "title": "4.x",
+        "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
+        "openIssues": 1945,
+        "closedIssues": 79,
+        "id": 16
+      },
+      "openIssues": 1,
+      "closedIssues": 2
+    }
   ]
 }
