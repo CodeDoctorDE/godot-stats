@@ -19030,12 +19030,12 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1143,
+        "openIssues": 1144,
         "closedIssues": 1138,
         "id": 10
       },
-      "openIssues": 5,
-      "closedIssues": 54
+      "openIssues": 0,
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -19057,7 +19057,7 @@
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 4
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -19067,8 +19067,8 @@
         "closedIssues": 63,
         "id": 16
       },
-      "openIssues": 7,
-      "closedIssues": 5
+      "openIssues": 0,
+      "closedIssues": 0
     }
   ]
 }
