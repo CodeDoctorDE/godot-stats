@@ -19076,11 +19076,11 @@
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 1145,
+        "openIssues": 1144,
         "closedIssues": 1139,
         "id": 10
       },
-      "openIssues": 4,
+      "openIssues": 3,
       "closedIssues": 1
     },
     {
@@ -19113,7 +19113,7 @@
         "closedIssues": 63,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     }
   ]
