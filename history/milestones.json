@@ -19494,7 +19494,7 @@
         "closedIssues": 1309,
         "id": 10
       },
-      "openIssues": 10,
+      "openIssues": 9,
       "closedIssues": 50
     },
     {
@@ -19524,7 +19524,7 @@
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
         "openIssues": 1945,
-        "closedIssues": 77,
+        "closedIssues": 78,
         "id": 16
       },
       "openIssues": 3,
