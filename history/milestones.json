@@ -21079,29 +21079,29 @@
         "closedIssues": 96,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 4,
       "closedIssues": 3
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
-        "openIssues": 520,
-        "closedIssues": 2137,
+        "openIssues": 522,
+        "closedIssues": 2139,
         "id": 10
       },
-      "openIssues": 5,
-      "closedIssues": 79
+      "openIssues": 9,
+      "closedIssues": 81
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 400,
+        "openIssues": 404,
         "closedIssues": 1,
         "id": 18
       },
-      "openIssues": 0,
+      "openIssues": 2,
       "closedIssues": 1
     }
   ]
