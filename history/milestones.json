@@ -21707,7 +21707,7 @@
         "id": 16
       },
       "openIssues": 5,
-      "closedIssues": 3
+      "closedIssues": 1
     },
     {
       "milestone": {
@@ -21724,11 +21724,11 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 829,
+        "openIssues": 834,
         "closedIssues": 4,
         "id": 18
       },
-      "openIssues": 7,
+      "openIssues": 9,
       "closedIssues": 0
     }
   ]
