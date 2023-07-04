@@ -21867,7 +21867,7 @@
         "id": 15
       },
       "openIssues": 0,
-      "closedIssues": 1
+      "closedIssues": 0
     },
     {
       "milestone": {
@@ -21877,29 +21877,29 @@
         "closedIssues": 111,
         "id": 16
       },
-      "openIssues": 8,
-      "closedIssues": 2
+      "openIssues": 4,
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.1",
         "description": "",
         "openIssues": 0,
-        "closedIssues": 2394,
+        "closedIssues": 2396,
         "id": 10
       },
       "openIssues": 0,
-      "closedIssues": 20
+      "closedIssues": 3
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 871,
+        "openIssues": 873,
         "closedIssues": 4,
         "id": 18
       },
-      "openIssues": 10,
+      "openIssues": 8,
       "closedIssues": 0
     }
   ]
