@@ -21874,11 +21874,11 @@
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
         "openIssues": 2207,
-        "closedIssues": 110,
+        "closedIssues": 111,
         "id": 16
       },
-      "openIssues": 5,
-      "closedIssues": 3
+      "openIssues": 6,
+      "closedIssues": 4
     },
     {
       "milestone": {
