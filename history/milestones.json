@@ -22727,18 +22727,18 @@
         "closedIssues": 126,
         "id": 16
       },
-      "openIssues": 6,
-      "closedIssues": 1
+      "openIssues": 4,
+      "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 908,
+        "openIssues": 912,
         "closedIssues": 336,
         "id": 18
       },
-      "openIssues": 11,
+      "openIssues": 14,
       "closedIssues": 40
     }
   ]
