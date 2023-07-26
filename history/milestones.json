@@ -22911,18 +22911,18 @@
         "closedIssues": 121,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 919,
+        "openIssues": 922,
         "closedIssues": 420,
         "id": 18
       },
-      "openIssues": 12,
+      "openIssues": 15,
       "closedIssues": 30
     }
   ]
