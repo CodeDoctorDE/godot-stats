@@ -24337,18 +24337,18 @@
         "closedIssues": 126,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 886,
+        "openIssues": 887,
         "closedIssues": 994,
         "id": 18
       },
-      "openIssues": 5,
+      "openIssues": 6,
       "closedIssues": 26
     }
   ]
