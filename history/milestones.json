@@ -24429,18 +24429,18 @@
         "closedIssues": 125,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 915,
+        "openIssues": 916,
         "closedIssues": 994,
         "id": 18
       },
-      "openIssues": 14,
+      "openIssues": 15,
       "closedIssues": 0
     }
   ]
