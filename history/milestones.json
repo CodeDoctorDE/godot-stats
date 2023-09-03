@@ -24705,19 +24705,19 @@
         "closedIssues": 127,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 889,
+        "openIssues": 893,
         "closedIssues": 1163,
         "id": 18
       },
-      "openIssues": 3,
-      "closedIssues": 20
+      "openIssues": 5,
+      "closedIssues": 4
     }
   ]
 }
