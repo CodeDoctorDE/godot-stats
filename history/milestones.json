@@ -24843,18 +24843,18 @@
         "closedIssues": 125,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 930,
+        "openIssues": 931,
         "closedIssues": 1187,
         "id": 18
       },
-      "openIssues": 15,
+      "openIssues": 14,
       "closedIssues": 14
     }
   ]
