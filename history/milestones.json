@@ -25119,18 +25119,18 @@
         "closedIssues": 126,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 925,
+        "openIssues": 926,
         "closedIssues": 1304,
         "id": 18
       },
-      "openIssues": 13,
+      "openIssues": 10,
       "closedIssues": 26
     }
   ]
