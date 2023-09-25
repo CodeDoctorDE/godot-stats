@@ -25779,7 +25779,7 @@
       "milestone": {
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
-        "openIssues": 2255,
+        "openIssues": 2257,
         "closedIssues": 128,
         "id": 16
       },
@@ -25790,18 +25790,18 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 974,
+        "openIssues": 983,
         "closedIssues": 1524,
         "id": 18
       },
-      "openIssues": 6,
+      "openIssues": 14,
       "closedIssues": 28
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 9,
+        "openIssues": 10,
         "closedIssues": 0,
         "id": 19
       },
