@@ -26353,19 +26353,19 @@
         "closedIssues": 132,
         "id": 16
       },
-      "openIssues": 11,
+      "openIssues": 13,
       "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 933,
-        "closedIssues": 1834,
+        "openIssues": 917,
+        "closedIssues": 1860,
         "id": 18
       },
-      "openIssues": 15,
-      "closedIssues": 33
+      "openIssues": 14,
+      "closedIssues": 59
     },
     {
       "milestone": {
