@@ -26930,22 +26930,22 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 925,
+        "openIssues": 929,
         "closedIssues": 2086,
         "id": 18
       },
-      "openIssues": 15,
+      "openIssues": 18,
       "closedIssues": 3
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 79,
+        "openIssues": 81,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 0,
+      "openIssues": 2,
       "closedIssues": 0
     }
   ]
