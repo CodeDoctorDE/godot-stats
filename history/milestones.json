@@ -27151,25 +27151,25 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 4,
       "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 918,
-        "closedIssues": 2194,
+        "openIssues": 926,
+        "closedIssues": 2195,
         "id": 18
       },
-      "openIssues": 11,
-      "closedIssues": 23
+      "openIssues": 16,
+      "closedIssues": 24
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 103,
+        "openIssues": 104,
         "closedIssues": 0,
         "id": 19
       },
