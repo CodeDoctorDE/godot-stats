@@ -27215,22 +27215,22 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 939,
+        "openIssues": 940,
         "closedIssues": 2197,
         "id": 18
       },
-      "openIssues": 21,
+      "openIssues": 16,
       "closedIssues": 3
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 107,
+        "openIssues": 106,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     }
   ]
