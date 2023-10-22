@@ -27322,29 +27322,29 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 938,
-        "closedIssues": 2257,
+        "openIssues": 947,
+        "closedIssues": 2256,
         "id": 18
       },
       "openIssues": 15,
-      "closedIssues": 21
+      "closedIssues": 13
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 110,
+        "openIssues": 111,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 2,
+      "openIssues": 3,
       "closedIssues": 0
     }
   ]
