@@ -27557,22 +27557,22 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 898,
-        "closedIssues": 2373,
+        "openIssues": 764,
+        "closedIssues": 2396,
         "id": 18
       },
-      "openIssues": 8,
-      "closedIssues": 34
+      "openIssues": 13,
+      "closedIssues": 56
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 140,
+        "openIssues": 268,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 3,
+      "openIssues": 1,
       "closedIssues": 0
     }
   ]
