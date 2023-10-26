@@ -27550,7 +27550,7 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
@@ -27561,14 +27561,14 @@
         "closedIssues": 2342,
         "id": 18
       },
-      "openIssues": 27,
+      "openIssues": 26,
       "closedIssues": 25
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 125,
+        "openIssues": 126,
         "closedIssues": 0,
         "id": 19
       },
