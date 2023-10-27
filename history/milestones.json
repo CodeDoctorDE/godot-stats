@@ -27614,11 +27614,11 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 741,
+        "openIssues": 742,
         "closedIssues": 2397,
         "id": 18
       },
-      "openIssues": 15,
+      "openIssues": 16,
       "closedIssues": 55
     },
     {
@@ -27629,7 +27629,7 @@
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     }
   ]
