@@ -27607,29 +27607,29 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 742,
-        "closedIssues": 2397,
+        "openIssues": 714,
+        "closedIssues": 2418,
         "id": 18
       },
       "openIssues": 16,
-      "closedIssues": 55
+      "closedIssues": 45
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 297,
+        "openIssues": 320,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 0,
+      "openIssues": 3,
       "closedIssues": 0
     }
   ]
