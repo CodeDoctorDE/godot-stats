@@ -27949,25 +27949,25 @@
         "closedIssues": 132,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 6,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 516,
+        "openIssues": 518,
         "closedIssues": 2598,
         "id": 18
       },
-      "openIssues": 7,
-      "closedIssues": 38
+      "openIssues": 8,
+      "closedIssues": 19
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 502,
+        "openIssues": 512,
         "closedIssues": 0,
         "id": 19
       },
