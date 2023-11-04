@@ -28070,7 +28070,7 @@
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 498,
+        "openIssues": 497,
         "closedIssues": 2626,
         "id": 18
       },
@@ -28081,11 +28081,11 @@
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 522,
+        "openIssues": 523,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 0
     }
   ]
