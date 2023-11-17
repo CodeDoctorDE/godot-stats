@@ -28804,29 +28804,29 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 3,
-        "closedIssues": 2864,
+        "openIssues": 4,
+        "closedIssues": 2865,
         "id": 18
       },
-      "openIssues": 0,
-      "closedIssues": 16
+      "openIssues": 1,
+      "closedIssues": 13
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 865,
+        "openIssues": 870,
         "closedIssues": 1,
         "id": 19
       },
-      "openIssues": 5,
+      "openIssues": 8,
       "closedIssues": 1
     }
   ]
