@@ -29203,29 +29203,29 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.2",
         "description": "",
-        "openIssues": 7,
-        "closedIssues": 2942,
+        "openIssues": 10,
+        "closedIssues": 2944,
         "id": 18
       },
-      "openIssues": 1,
-      "closedIssues": 20
+      "openIssues": 4,
+      "closedIssues": 17
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 930,
+        "openIssues": 937,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 7,
+      "openIssues": 9,
       "closedIssues": 0
     }
   ]
