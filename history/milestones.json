@@ -29523,7 +29523,7 @@
         "closedIssues": 103,
         "id": 14
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
@@ -29552,11 +29552,11 @@
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1018,
+        "openIssues": 1022,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 7,
+      "openIssues": 10,
       "closedIssues": 0
     }
   ]
