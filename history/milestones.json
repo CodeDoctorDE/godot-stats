@@ -29637,18 +29637,18 @@
         "closedIssues": 136,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1051,
+        "openIssues": 1056,
         "closedIssues": 0,
         "id": 19
       },
-      "openIssues": 13,
+      "openIssues": 11,
       "closedIssues": 0
     }
   ]
