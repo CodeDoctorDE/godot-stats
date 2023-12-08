@@ -29887,7 +29887,7 @@
       "milestone": {
         "title": "3.x",
         "description": "Issues and pull requests slated for an undetermined Godot 3 release.",
-        "openIssues": 767,
+        "openIssues": 764,
         "closedIssues": 0,
         "id": 14
       },
@@ -29898,34 +29898,34 @@
       "milestone": {
         "title": "3.6",
         "description": "The LTS version of Godot 3, stable and battle-tested with years of improvements and released projects.",
-        "openIssues": 91,
-        "closedIssues": 780,
+        "openIssues": 87,
+        "closedIssues": 788,
         "id": 15
       },
-      "openIssues": 2,
-      "closedIssues": 0
+      "openIssues": 3,
+      "closedIssues": 8
     },
     {
       "milestone": {
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
-        "openIssues": 2592,
+        "openIssues": 2594,
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 8,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1047,
-        "closedIssues": 127,
+        "openIssues": 997,
+        "closedIssues": 188,
         "id": 19
       },
-      "openIssues": 4,
-      "closedIssues": 1
+      "openIssues": 2,
+      "closedIssues": 61
     }
   ]
 }
