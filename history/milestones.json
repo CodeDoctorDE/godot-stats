@@ -30005,19 +30005,19 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1007,
-        "closedIssues": 189,
+        "openIssues": 1010,
+        "closedIssues": 188,
         "id": 19
       },
-      "openIssues": 8,
-      "closedIssues": 1
+      "openIssues": 9,
+      "closedIssues": 0
     }
   ]
 }
