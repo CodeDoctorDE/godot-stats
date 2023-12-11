@@ -30051,19 +30051,19 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1018,
-        "closedIssues": 189,
+        "openIssues": 1017,
+        "closedIssues": 190,
         "id": 19
       },
       "openIssues": 6,
-      "closedIssues": 1
+      "closedIssues": 2
     }
   ]
 }
