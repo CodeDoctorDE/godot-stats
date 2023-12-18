@@ -30373,19 +30373,19 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1034,
-        "closedIssues": 324,
+        "openIssues": 1037,
+        "closedIssues": 325,
         "id": 19
       },
-      "openIssues": 10,
-      "closedIssues": 0
+      "openIssues": 11,
+      "closedIssues": 1
     }
   ]
 }
