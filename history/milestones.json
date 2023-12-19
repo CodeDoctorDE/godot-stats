@@ -30416,17 +30416,17 @@
         "title": "4.x",
         "description": "Issues and pull requests slated for an undetermined Godot 4 release.",
         "openIssues": 2599,
-        "closedIssues": 0,
+        "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 4,
-      "closedIssues": 0
+      "openIssues": 3,
+      "closedIssues": 1
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1028,
+        "openIssues": 1027,
         "closedIssues": 348,
         "id": 19
       },
