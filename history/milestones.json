@@ -30465,19 +30465,19 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1007,
-        "closedIssues": 399,
+        "openIssues": 994,
+        "closedIssues": 419,
         "id": 19
       },
       "openIssues": 9,
-      "closedIssues": 25
+      "closedIssues": 45
     }
   ]
 }
