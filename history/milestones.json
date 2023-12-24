@@ -30649,7 +30649,7 @@
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 2,
+      "openIssues": 1,
       "closedIssues": 1
     },
     {
@@ -30657,11 +30657,11 @@
         "title": "4.3",
         "description": "",
         "openIssues": 1016,
-        "closedIssues": 445,
+        "closedIssues": 446,
         "id": 19
       },
       "openIssues": 5,
-      "closedIssues": 1
+      "closedIssues": 2
     }
   ]
 }
