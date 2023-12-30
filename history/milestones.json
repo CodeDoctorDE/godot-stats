@@ -30925,18 +30925,18 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1058,
+        "openIssues": 1067,
         "closedIssues": 446,
         "id": 19
       },
-      "openIssues": 5,
+      "openIssues": 12,
       "closedIssues": 0
     }
   ]
