@@ -31707,19 +31707,19 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1043,
-        "closedIssues": 819,
+        "openIssues": 1030,
+        "closedIssues": 835,
         "id": 19
       },
-      "openIssues": 13,
-      "closedIssues": 41
+      "openIssues": 9,
+      "closedIssues": 57
     }
   ]
 }
