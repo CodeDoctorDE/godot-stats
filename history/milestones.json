@@ -32397,19 +32397,19 @@
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 4,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1046,
-        "closedIssues": 1105,
+        "openIssues": 1040,
+        "closedIssues": 1121,
         "id": 19
       },
-      "openIssues": 12,
-      "closedIssues": 21
+      "openIssues": 11,
+      "closedIssues": 37
     }
   ]
 }
