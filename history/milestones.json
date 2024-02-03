@@ -32535,18 +32535,18 @@
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1063,
+        "openIssues": 1066,
         "closedIssues": 1150,
         "id": 19
       },
-      "openIssues": 14,
+      "openIssues": 17,
       "closedIssues": 26
     }
   ]
