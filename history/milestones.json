@@ -32857,19 +32857,19 @@
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 2,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1067,
+        "openIssues": 1070,
         "closedIssues": 1314,
         "id": 19
       },
-      "openIssues": 12,
-      "closedIssues": 13
+      "openIssues": 11,
+      "closedIssues": 1
     }
   ]
 }
