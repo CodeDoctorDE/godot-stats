@@ -32934,11 +32934,11 @@
       "milestone": {
         "title": "3.6",
         "description": "The LTS version of Godot 3, stable and battle-tested with years of improvements and released projects.",
-        "openIssues": 69,
+        "openIssues": 70,
         "closedIssues": 850,
         "id": 15
       },
-      "openIssues": 2,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
@@ -32949,7 +32949,7 @@
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 5,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
@@ -32960,7 +32960,7 @@
         "closedIssues": 1315,
         "id": 19
       },
-      "openIssues": 11,
+      "openIssues": 8,
       "closedIssues": 1
     }
   ]
