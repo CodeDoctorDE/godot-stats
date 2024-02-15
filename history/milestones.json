@@ -33098,7 +33098,7 @@
         "closedIssues": 5,
         "id": 16
       },
-      "openIssues": 9,
+      "openIssues": 7,
       "closedIssues": 0
     },
     {
@@ -33116,12 +33116,12 @@
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1008,
-        "closedIssues": 1487,
+        "openIssues": 1007,
+        "closedIssues": 1488,
         "id": 19
       },
-      "openIssues": 15,
-      "closedIssues": 21
+      "openIssues": 13,
+      "closedIssues": 22
     }
   ]
 }
