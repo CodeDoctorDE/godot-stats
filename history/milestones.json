@@ -34295,7 +34295,7 @@
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 1
     },
     {
@@ -34313,12 +34313,12 @@
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 970,
-        "closedIssues": 2118,
+        "openIssues": 969,
+        "closedIssues": 2123,
         "id": 19
       },
-      "openIssues": 6,
-      "closedIssues": 27
+      "openIssues": 7,
+      "closedIssues": 24
     }
   ]
 }
