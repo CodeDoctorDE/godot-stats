@@ -37259,29 +37259,29 @@
         "closedIssues": 7,
         "id": 16
       },
-      "openIssues": 7,
+      "openIssues": 4,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 15,
+        "openIssues": 16,
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1086,
+        "openIssues": 1087,
         "closedIssues": 3241,
         "id": 19
       },
-      "openIssues": 10,
+      "openIssues": 9,
       "closedIssues": 0
     }
   ]
