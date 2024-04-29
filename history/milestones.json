@@ -37327,19 +37327,19 @@
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 1094,
-        "closedIssues": 3241,
+        "openIssues": 1095,
+        "closedIssues": 3242,
         "id": 19
       },
-      "openIssues": 6,
-      "closedIssues": 0
+      "openIssues": 8,
+      "closedIssues": 1
     }
   ]
 }
