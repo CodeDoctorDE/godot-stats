@@ -38274,7 +38274,7 @@
         "closedIssues": 910,
         "id": 15
       },
-      "openIssues": 1,
+      "openIssues": 0,
       "closedIssues": 2
     },
     {
@@ -38285,14 +38285,14 @@
         "closedIssues": 12,
         "id": 16
       },
-      "openIssues": 3,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 34,
+        "openIssues": 39,
         "closedIssues": 0,
         "id": 20
       },
@@ -38304,11 +38304,11 @@
         "title": "4.3",
         "description": "",
         "openIssues": 1042,
-        "closedIssues": 3718,
+        "closedIssues": 3717,
         "id": 19
       },
-      "openIssues": 10,
-      "closedIssues": 21
+      "openIssues": 8,
+      "closedIssues": 19
     }
   ]
 }
