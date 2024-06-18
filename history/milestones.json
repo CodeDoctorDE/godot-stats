@@ -40166,14 +40166,14 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 122,
+        "openIssues": 123,
         "closedIssues": 0,
         "id": 20
       },
@@ -40188,7 +40188,7 @@
         "closedIssues": 4345,
         "id": 19
       },
-      "openIssues": 8,
+      "openIssues": 7,
       "closedIssues": 42
     }
   ]
