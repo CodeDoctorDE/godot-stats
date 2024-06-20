@@ -40280,7 +40280,7 @@
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 8,
       "closedIssues": 0
     },
     {
@@ -40291,18 +40291,18 @@
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 946,
+        "openIssues": 947,
         "closedIssues": 4397,
         "id": 19
       },
-      "openIssues": 0,
+      "openIssues": 14,
       "closedIssues": 0
     }
   ]
