@@ -40394,29 +40394,29 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 9,
+      "openIssues": 8,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 144,
+        "openIssues": 147,
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 928,
+        "openIssues": 930,
         "closedIssues": 4452,
         "id": 19
       },
-      "openIssues": 9,
+      "openIssues": 11,
       "closedIssues": 26
     }
   ]
