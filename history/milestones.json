@@ -40622,7 +40622,7 @@
         "closedIssues": 1,
         "id": 16
       },
-      "openIssues": 9,
+      "openIssues": 5,
       "closedIssues": 1
     },
     {
@@ -40640,12 +40640,12 @@
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 924,
-        "closedIssues": 4545,
+        "openIssues": 908,
+        "closedIssues": 4572,
         "id": 19
       },
-      "openIssues": 7,
-      "closedIssues": 17
+      "openIssues": 9,
+      "closedIssues": 44
     }
   ]
 }
