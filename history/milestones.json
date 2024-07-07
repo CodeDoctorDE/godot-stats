@@ -41249,8 +41249,8 @@
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 4,
+      "closedIssues": 1
     },
     {
       "milestone": {
@@ -41260,18 +41260,18 @@
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 864,
+        "openIssues": 866,
         "closedIssues": 4759,
         "id": 19
       },
-      "openIssues": 0,
+      "openIssues": 7,
       "closedIssues": 0
     }
   ]
