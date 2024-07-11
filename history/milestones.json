@@ -41477,18 +41477,18 @@
         "closedIssues": 2,
         "id": 16
       },
-      "openIssues": 6,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 258,
+        "openIssues": 259,
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 2,
+      "openIssues": 3,
       "closedIssues": 0
     },
     {
@@ -41499,7 +41499,7 @@
         "closedIssues": 4881,
         "id": 19
       },
-      "openIssues": 9,
+      "openIssues": 8,
       "closedIssues": 21
     }
   ]
