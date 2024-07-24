@@ -42218,7 +42218,7 @@
         "closedIssues": 3,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
@@ -42229,19 +42229,19 @@
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 1,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 802,
+        "openIssues": 805,
         "closedIssues": 5120,
         "id": 19
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 16,
+      "closedIssues": 27
     }
   ]
 }
