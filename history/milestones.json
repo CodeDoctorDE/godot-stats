@@ -42560,30 +42560,30 @@
         "closedIssues": 0,
         "id": 16
       },
-      "openIssues": 0,
+      "openIssues": 6,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.4",
         "description": "",
-        "openIssues": 654,
+        "openIssues": 655,
         "closedIssues": 0,
         "id": 20
       },
-      "openIssues": 0,
+      "openIssues": 5,
       "closedIssues": 0
     },
     {
       "milestone": {
         "title": "4.3",
         "description": "",
-        "openIssues": 382,
-        "closedIssues": 5222,
+        "openIssues": 381,
+        "closedIssues": 5223,
         "id": 19
       },
-      "openIssues": 0,
-      "closedIssues": 0
+      "openIssues": 5,
+      "closedIssues": 18
     }
   ]
 }
